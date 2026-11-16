@@ -1,0 +1,525 @@
+{% extends "base.html" %}
+{% block title %}{{ course_meta.display_code }} Exam | {{ student_full_name }}{% endblock %}
+{% block body_class %}bg-white text-black min-h-screen flex flex-col select-none{% endblock %}
+
+{% block content %}
+<!-- Top Examination Header (White Background, Crisp Black Text & Borders) -->
+<header class="sticky top-0 z-30 bg-white border-b-2 border-black px-4 sm:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+        <!-- Candidate & Current Course Info -->
+        <div class="flex items-center gap-4">
+            <div class="px-3 py-1.5 rounded-lg bg-black text-white font-extrabold text-sm tracking-wider">
+                {{ course_meta.display_code }}
+            </div>
+            <div>
+                <h1 class="text-sm sm:text-base font-extrabold text-black leading-tight">
+                    {{ course_meta.title }} <span class="text-xs font-semibold text-neutral-600">({{ section.credit_units }} Units • 35 Questions)</span>
+                </h1>
+                <p class="text-xs font-semibold text-neutral-700">
+                    Candidate: <span class="font-bold text-black">{{ student_full_name }}</span> • Matric: <span class="font-mono font-bold text-black">{{ attempt.matric_number }}</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- 4-Course Sequential Progress Stepper -->
+        <div class="hidden xl:flex items-center gap-2">
+            {% for step in course_steps %}
+                <div class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border
+                    {% if step.status == 'completed' %}
+                        bg-neutral-100 text-neutral-500 border-neutral-300 line-through
+                    {% elif step.status == 'active' %}
+                        bg-black text-white border-black ring-2 ring-black/20
+                    {% else %}
+                        bg-white text-neutral-400 border-neutral-200
+                    {% endif %}">
+                    <span>{{ step.order }}. {{ step.display_code }}</span>
+                    <span class="text-[10px]">({{ step.duration_minutes }}m)</span>
+                </div>
+                {% if not loop.last %}
+                <span class="text-neutral-300 font-bold">→</span>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <!-- Live Countdown Timer & Submit Course Button -->
+        <div class="flex items-center gap-3">
+            <div id="timer-box" class="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-black bg-white text-black font-mono font-extrabold text-lg sm:text-xl">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span id="timer-display">--:--</span>
+            </div>
+
+            <button
+                type="button"
+                onclick="openSubmitModal()"
+                class="px-4 py-2.5 rounded-xl bg-black hover:bg-neutral-800 text-white font-bold text-xs sm:text-sm transition shadow-sm"
+            >
+                Submit {{ course_meta.display_code }}
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Main Exam Workspace (Pure White Background, Crisp Black Text) -->
+<main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-8 py-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <!-- Left Column: Active Question & Options (8 cols) -->
+    <section class="lg:col-span-8 flex flex-col justify-between bg-white border-2 border-neutral-900 rounded-2xl p-6 sm:p-8">
+        <div class="space-y-6">
+            <!-- Question Number & Flag Bar -->
+            <div class="flex items-center justify-between border-b border-neutral-200 pb-4">
+                <div class="flex items-center gap-3">
+                    <span class="px-3.5 py-1.5 rounded-lg bg-neutral-900 text-white font-extrabold text-sm">
+                        Question <span id="q-number">1</span> of 35
+                    </span>
+                    <span id="save-status" class="text-xs font-semibold text-neutral-500">All changes saved</span>
+                </div>
+
+                <button
+                    type="button"
+                    id="flag-btn"
+                    onclick="toggleFlagCurrent()"
+                    class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-neutral-400 text-xs font-bold text-black hover:bg-neutral-100 transition"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+                    </svg>
+                    <span id="flag-btn-text">Flag for Review</span>
+                </button>
+            </div>
+
+            <!-- Question Text -->
+            <div class="py-2">
+                <p id="q-text" class="text-lg sm:text-xl font-bold text-black leading-relaxed"></p>
+            </div>
+
+            <!-- Options A - D -->
+            <div id="options-container" class="space-y-3 pt-2">
+                {% for opt_letter in ['A', 'B', 'C', 'D'] %}
+                <button
+                    type="button"
+                    id="opt-btn-{{ opt_letter }}"
+                    onclick="selectOption('{{ opt_letter }}')"
+                    class="w-full text-left p-4 rounded-xl border-2 border-neutral-300 hover:border-black bg-white text-black transition flex items-start gap-4 group"
+                >
+                    <span
+                        id="opt-badge-{{ opt_letter }}"
+                        class="w-8 h-8 rounded-lg border-2 border-black flex items-center justify-center font-extrabold text-sm shrink-0 bg-white text-black"
+                    >
+                        {{ opt_letter }}
+                    </span>
+                    <span id="opt-text-{{ opt_letter }}" class="text-base font-semibold text-black pt-0.5 leading-snug"></span>
+                </button>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Bottom Navigation Controls -->
+        <div class="mt-8 pt-5 border-t border-neutral-200 flex flex-wrap items-center justify-between gap-3">
+            <button
+                type="button"
+                id="prev-btn"
+                onclick="goPrev()"
+                class="px-5 py-2.5 rounded-xl border-2 border-black bg-white hover:bg-neutral-100 text-black font-bold text-sm transition disabled:opacity-30 disabled:pointer-events-none"
+            >
+                ← Previous
+            </button>
+
+            <button
+                type="button"
+                onclick="clearCurrentOption()"
+                class="px-4 py-2 rounded-xl border border-neutral-300 hover:border-black text-neutral-700 hover:text-black font-semibold text-xs transition"
+            >
+                Clear Selected Option
+            </button>
+
+            <button
+                type="button"
+                id="next-btn"
+                onclick="goNext()"
+                class="px-6 py-2.5 rounded-xl bg-black hover:bg-neutral-800 text-white font-bold text-sm transition"
+            >
+                Next →
+            </button>
+        </div>
+    </section>
+
+    <!-- Right Column: Question Palette & Course Status (4 cols) -->
+    <aside class="lg:col-span-4 space-y-6">
+        <div class="bg-white border-2 border-neutral-900 rounded-2xl p-5 space-y-4">
+            <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
+                <h2 class="text-sm font-extrabold uppercase tracking-wider text-black">
+                    {{ course_meta.display_code }} Question Palette
+                </h2>
+                <span class="text-xs font-bold text-neutral-700">
+                    Answered: <strong id="answered-count" class="text-black">0</strong> / 35
+                </span>
+            </div>
+
+            <!-- Legend matching the classic shaded CBT tile style -->
+            <div class="grid grid-cols-3 gap-2 text-[11px] font-bold text-black">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-4 h-4 rounded-sm bg-neutral-300 border border-neutral-500 shadow-inner inline-block relative">
+                        <span class="absolute bottom-0.5 inset-x-1 h-0.5 bg-neutral-800 rounded-full"></span>
+                    </span>
+                    <span>Done (Shaded)</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-4 h-4 rounded-sm bg-gradient-to-b from-white to-neutral-100 border border-neutral-300 shadow-xs inline-block"></span>
+                    <span>Not Done</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-4 h-4 rounded-sm bg-amber-100 border border-amber-500 inline-block relative">
+                        <span class="absolute top-0.5 right-0.5 w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                    </span>
+                    <span>Flagged</span>
+                </div>
+            </div>
+
+            <!-- 35 Question Buttons Grid (Zero-padded 01..35 matching the CBT reference image) -->
+            <div id="palette-grid" class="grid grid-cols-7 gap-2 pt-1"></div>
+
+            <div class="pt-3 border-t border-neutral-200 space-y-2">
+                <p class="text-xs text-neutral-600 leading-relaxed">
+                    You can click any question number above to review or change your answer before submitting <strong>{{ course_meta.display_code }}</strong>.
+                </p>
+                <button
+                    type="button"
+                    onclick="openSubmitModal()"
+                    class="w-full py-3 rounded-xl bg-black hover:bg-neutral-800 text-white font-extrabold text-sm transition"
+                >
+                    Finish &amp; Submit {{ course_meta.display_code }}
+                </button>
+            </div>
+        </div>
+
+        <!-- Keyboard Shortcuts & Branding Box -->
+        <div class="border border-neutral-300 rounded-2xl p-4 text-xs text-neutral-700 space-y-2 bg-white">
+            <p class="font-extrabold text-black uppercase tracking-wider">Quick Keyboard Shortcuts</p>
+            <p><kbd class="px-1.5 py-0.5 border border-neutral-400 rounded font-mono font-bold text-black">A</kbd> <kbd class="px-1.5 py-0.5 border border-neutral-400 rounded font-mono font-bold text-black">B</kbd> <kbd class="px-1.5 py-0.5 border border-neutral-400 rounded font-mono font-bold text-black">C</kbd> <kbd class="px-1.5 py-0.5 border border-neutral-400 rounded font-mono font-bold text-black">D</kbd> — Select Option</p>
+            <p><kbd class="px-1.5 py-0.5 border border-neutral-400 rounded font-mono font-bold text-black">←</kbd> / <kbd class="px-1.5 py-0.5 border border-neutral-400 rounded font-mono font-bold text-black">→</kbd> — Previous / Next Question</p>
+            <p class="pt-2 border-t border-neutral-200 font-bold text-black tracking-wider uppercase">
+                Powered BY {{ powered_by_name }}
+            </p>
+        </div>
+    </aside>
+</main>
+
+<!-- Submit Course Confirmation Modal -->
+<div id="submit-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-xs p-4">
+    <div class="bg-white text-black border-2 border-black rounded-2xl max-w-md w-full p-6 space-y-5 shadow-2xl">
+        <div class="space-y-1">
+            <p class="text-xs font-extrabold uppercase tracking-widest text-neutral-500">Confirm Course Submission</p>
+            <h3 class="text-xl font-extrabold text-black">Submit {{ course_meta.display_code }} ({{ course_meta.title }})?</h3>
+        </div>
+
+        <div class="rounded-xl bg-neutral-100 border border-neutral-300 p-4 space-y-2 text-sm">
+            <div class="flex justify-between font-bold">
+                <span>Questions Answered:</span>
+                <span id="modal-answered">0 / 35</span>
+            </div>
+            <div class="flex justify-between font-bold">
+                <span>Unanswered / Skipped:</span>
+                <span id="modal-unanswered">35</span>
+            </div>
+            <div class="flex justify-between font-bold">
+                <span>Flagged for Review:</span>
+                <span id="modal-flagged">0</span>
+            </div>
+        </div>
+
+        <p class="text-xs text-neutral-700 leading-relaxed font-medium">
+            <strong>Important:</strong> Once you submit <strong>{{ course_meta.display_code }}</strong>, you cannot return to this course.
+            {% if next_course_label %}
+                You will immediately start <strong>{{ next_course_label }}</strong>.
+            {% else %}
+                This is your final course! Submitting will complete the entire examination.
+            {% endif %}
+        </p>
+
+        <div class="flex items-center justify-end gap-3 pt-2">
+            <button
+                type="button"
+                onclick="closeSubmitModal()"
+                class="px-5 py-2.5 rounded-xl border-2 border-black bg-white hover:bg-neutral-100 text-black font-bold text-sm"
+            >
+                Keep Reviewing
+            </button>
+            <button
+                type="button"
+                id="confirm-submit-btn"
+                onclick="submitSectionNow()"
+                class="px-6 py-2.5 rounded-xl bg-black hover:bg-neutral-800 text-white font-extrabold text-sm"
+            >
+                Yes, Submit {{ course_meta.display_code }}
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const SECTION_ID = {{ section.id }};
+    const QUESTIONS = {{ questions_json | tojson }};
+    let remainingSeconds = {{ remaining_seconds }};
+    let currentIndex = 0;
+    let isSubmitting = false;
+
+    function formatTime(sec) {
+        const s = Math.max(0, Math.floor(sec));
+        const mins = Math.floor(s / 60);
+        const rem = s % 60;
+        return String(mins).padStart(2, '0') + ':' + String(rem).padStart(2, '0');
+    }
+
+    function updateTimerUI() {
+        const display = document.getElementById('timer-display');
+        const box = document.getElementById('timer-box');
+        display.textContent = formatTime(remainingSeconds);
+
+        if (remainingSeconds <= 60) {
+            box.className = "flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-red-600 bg-red-600 text-white font-mono font-extrabold text-lg sm:text-xl animate-pulse";
+        } else if (remainingSeconds <= 300) {
+            box.className = "flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-amber-500 bg-amber-100 text-black font-mono font-extrabold text-lg sm:text-xl";
+        }
+    }
+
+    function renderPalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = '';
+        let answeredCount = 0;
+
+        QUESTIONS.forEach((q, idx) => {
+            if (q.selected_option) answeredCount++;
+            const btn = document.createElement('button');
+            btn.type = 'button';
+
+            // Zero-padded number 01..35 just like the reference image
+            const numLabel = String(q.number).padStart(2, '0');
+
+            // Always keep normal black text, shade the tile darker when done, and show a subtle indicator
+            let cls = "relative h-10 rounded-md font-bold text-xs text-black transition flex items-center justify-center select-none ";
+            if (q.selected_option) {
+                // Done / Answered: shaded darker grey background with normal black text
+                cls += "bg-gradient-to-b from-neutral-200 to-neutral-300 border border-neutral-500 shadow-inner ";
+            } else {
+                // Unanswered: crisp raised white/light bevel tile with normal black text
+                cls += "bg-gradient-to-b from-white to-neutral-100 border border-neutral-300 shadow-xs hover:border-neutral-500 ";
+            }
+
+            if (idx === currentIndex) {
+                cls += "ring-2 ring-black font-extrabold ";
+            }
+
+            btn.className = cls;
+
+            const span = document.createElement('span');
+            span.textContent = numLabel;
+            btn.appendChild(span);
+
+            // Subtle indicator bar at the bottom when answered ("done")
+            if (q.selected_option) {
+                const doneBar = document.createElement('span');
+                doneBar.className = "absolute bottom-1 inset-x-2 h-0.5 bg-neutral-800 rounded-full";
+                btn.appendChild(doneBar);
+            }
+
+            // Small corner dot indicator when flagged for review
+            if (q.is_flagged) {
+                const flagDot = document.createElement('span');
+                flagDot.className = "absolute top-1 right-1 w-2 h-2 rounded-full bg-amber-500 border border-black/40";
+                btn.appendChild(flagDot);
+            }
+
+            btn.onclick = () => {
+                currentIndex = idx;
+                renderQuestion();
+            };
+            grid.appendChild(btn);
+        });
+
+        document.getElementById('answered-count').textContent = answeredCount;
+    }
+
+    function renderQuestion() {
+        const q = QUESTIONS[currentIndex];
+        document.getElementById('q-number').textContent = q.number;
+        document.getElementById('q-text').textContent = q.question_text;
+
+        const flagBtn = document.getElementById('flag-btn');
+        const flagText = document.getElementById('flag-btn-text');
+        if (q.is_flagged) {
+            flagBtn.className = "inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border-2 border-black bg-amber-400 text-xs font-extrabold text-black transition";
+            flagText.textContent = "Flagged for Review";
+        } else {
+            flagBtn.className = "inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-neutral-400 text-xs font-bold text-black hover:bg-neutral-100 transition";
+            flagText.textContent = "Flag for Review";
+        }
+
+        ['A', 'B', 'C', 'D'].forEach(letter => {
+            const btn = document.getElementById('opt-btn-' + letter);
+            const badge = document.getElementById('opt-badge-' + letter);
+            const txt = document.getElementById('opt-text-' + letter);
+            txt.textContent = q.options[letter];
+
+            if (q.selected_option === letter) {
+                btn.className = "w-full text-left p-4 rounded-xl border-2 border-black bg-neutral-100 text-black transition flex items-start gap-4 shadow-xs";
+                badge.className = "w-8 h-8 rounded-lg border-2 border-black flex items-center justify-center font-extrabold text-sm shrink-0 bg-black text-white";
+            } else {
+                btn.className = "w-full text-left p-4 rounded-xl border-2 border-neutral-300 hover:border-black bg-white text-black transition flex items-start gap-4";
+                badge.className = "w-8 h-8 rounded-lg border-2 border-black flex items-center justify-center font-extrabold text-sm shrink-0 bg-white text-black";
+            }
+        });
+
+        document.getElementById('prev-btn').disabled = (currentIndex === 0);
+        const nextBtn = document.getElementById('next-btn');
+        if (currentIndex === QUESTIONS.length - 1) {
+            nextBtn.textContent = "Review & Submit →";
+        } else {
+            nextBtn.textContent = "Next →";
+        }
+
+        renderPalette();
+        if (window.typesetMath) {
+            window.typesetMath(document.getElementById('q-text'));
+            window.typesetMath(document.getElementById('options-container'));
+        }
+    }
+
+    async function syncAnswerToServer(q) {
+        const statusEl = document.getElementById('save-status');
+        statusEl.textContent = "Saving...";
+        try {
+            const res = await fetch('/api/save-answer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    answer_id: q.answer_id,
+                    selected_option: q.selected_option || "",
+                    is_flagged: q.is_flagged
+                })
+            });
+            const data = await res.json();
+            if (data.status === 'time_up' && data.redirect_url) {
+                window.location.href = data.redirect_url;
+                return;
+            }
+            statusEl.textContent = "Saved";
+        } catch (err) {
+            statusEl.textContent = "Saved locally";
+        }
+    }
+
+    function selectOption(letter) {
+        const q = QUESTIONS[currentIndex];
+        q.selected_option = letter;
+        renderQuestion();
+        syncAnswerToServer(q);
+    }
+
+    function clearCurrentOption() {
+        const q = QUESTIONS[currentIndex];
+        q.selected_option = null;
+        renderQuestion();
+        syncAnswerToServer(q);
+    }
+
+    function toggleFlagCurrent() {
+        const q = QUESTIONS[currentIndex];
+        q.is_flagged = !q.is_flagged;
+        renderQuestion();
+        syncAnswerToServer(q);
+    }
+
+    function goPrev() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            renderQuestion();
+        }
+    }
+
+    function goNext() {
+        if (currentIndex < QUESTIONS.length - 1) {
+            currentIndex++;
+            renderQuestion();
+        } else {
+            openSubmitModal();
+        }
+    }
+
+    function openSubmitModal() {
+        const answered = QUESTIONS.filter(q => q.selected_option).length;
+        const flagged = QUESTIONS.filter(q => q.is_flagged).length;
+        document.getElementById('modal-answered').textContent = `${answered} / ${QUESTIONS.length}`;
+        document.getElementById('modal-unanswered').textContent = `${QUESTIONS.length - answered}`;
+        document.getElementById('modal-flagged').textContent = `${flagged}`;
+        const modal = document.getElementById('submit-modal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    function closeSubmitModal() {
+        const modal = document.getElementById('submit-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    async function submitSectionNow() {
+        if (isSubmitting) return;
+        isSubmitting = true;
+        const btn = document.getElementById('confirm-submit-btn');
+        if (btn) {
+            btn.disabled = true;
+            btn.textContent = "Submitting...";
+        }
+        try {
+            const res = await fetch('/api/submit-section', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ section_id: SECTION_ID })
+            });
+            const data = await res.json();
+            if (data.redirect_url) {
+                window.location.href = data.redirect_url;
+            } else {
+                window.location.reload();
+            }
+        } catch (e) {
+            isSubmitting = false;
+            window.location.reload();
+        }
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        const modalOpen = !document.getElementById('submit-modal').classList.contains('hidden');
+        if (modalOpen) return;
+        const key = e.key.toUpperCase();
+        if (['A', 'B', 'C', 'D'].includes(key)) {
+            selectOption(key);
+        } else if (e.key === 'ArrowRight') {
+            if (currentIndex < QUESTIONS.length - 1) {
+                currentIndex++;
+                renderQuestion();
+            }
+        } else if (e.key === 'ArrowLeft') {
+            goPrev();
+        }
+    });
+
+    // Start countdown timer
+    updateTimerUI();
+    renderQuestion();
+
+    setInterval(() => {
+        if (remainingSeconds > 0) {
+            remainingSeconds--;
+            updateTimerUI();
+            if (remainingSeconds <= 0) {
+                submitSectionNow();
+            }
+        } else {
+            submitSectionNow();
+        }
+    }, 1000);
+</script>
+{% endblock %}

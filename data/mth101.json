@@ -1,0 +1,2602 @@
+[
+  {
+    "id": "mth_1",
+    "course": "MTH 101",
+    "question": "If \\(A = \\{1, 2, 3\\}\\) and \\(B = \\{2, 3, 4\\}\\), find \\(A \\cap B\\).",
+    "options": [
+      "\\(\\{1, 4\\}\\)",
+      "\\(\\{1, 2, 3, 4\\}\\)",
+      "\\(\\{2, 3\\}\\)",
+      "\\(\\emptyset\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(\\{2, 3\\}\\)."
+  },
+  {
+    "id": "mth_2",
+    "course": "MTH 101",
+    "question": "Let \\(U = \\{1, 2, 3, 4, 5\\}\\) and \\(A = \\{1, 3\\}\\). What is the complement \\(A^c\\)?",
+    "options": [
+      "\\(\\{2, 4, 5\\}\\)",
+      "\\(\\{1, 3, 5\\}\\)",
+      "\\(\\{1, 2, 3, 4, 5\\}\\)",
+      "\\(\\{4, 5\\}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(\\{2, 4, 5\\}\\)."
+  },
+  {
+    "id": "mth_3",
+    "course": "MTH 101",
+    "question": "Which of the following is a subset of \\(\\{a, b, c\\}\\)?",
+    "options": [
+      "\\(\\{a, b, d\\}\\)",
+      "\\(\\{c, d\\}\\)",
+      "\\(\\{a, c\\}\\)",
+      "\\(\\{d\\}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(\\{a, c\\}\\)."
+  },
+  {
+    "id": "mth_4",
+    "course": "MTH 101",
+    "question": "If \\(A \\subseteq B\\), then \\(A \\cup B\\) is equal to:",
+    "options": [
+      "\\(A\\)",
+      "\\(B\\)",
+      "\\(\\emptyset\\)",
+      "\\(A \\cap B\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(B\\)."
+  },
+  {
+    "id": "mth_5",
+    "course": "MTH 101",
+    "question": "In a Venn diagram, the region representing \\(A \\setminus B\\) is:",
+    "options": [
+      "Elements in both A and B",
+      "Elements in B but not A",
+      "Elements in A but not B",
+      "Elements in neither A nor B"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is Elements in A but not B."
+  },
+  {
+    "id": "mth_6",
+    "course": "MTH 101",
+    "question": "For any two sets \\(A\\) and \\(B\\), \\((A \\cup B)^c\\) is equal to:",
+    "options": [
+      "\\(A^c \\cup B^c\\)",
+      "\\(A^c \\cap B^c\\)",
+      "\\(A \\cap B\\)",
+      "\\(A^c \\setminus B^c\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(A^c \\cap B^c\\)."
+  },
+  {
+    "id": "mth_7",
+    "course": "MTH 101",
+    "question": "How many subsets does a set with 4 elements have?",
+    "options": [
+      "\\(4\\)",
+      "\\(8\\)",
+      "\\(16\\)",
+      "\\(32\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(16\\)."
+  },
+  {
+    "id": "mth_8",
+    "course": "MTH 101",
+    "question": "If \\(n(A) = 5\\), \\(n(B) = 3\\), and \\(A \\cap B = \\emptyset\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(8\\)",
+      "\\(15\\)",
+      "\\(0\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(8\\)."
+  },
+  {
+    "id": "mth_9",
+    "course": "MTH 101",
+    "question": "Which of the following numbers is irrational?",
+    "options": [
+      "3.14",
+      "\\(\\sqrt{16}\\)",
+      "\\(\\frac{22}{7}\\)",
+      "\\(\\sqrt{2}\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct option is \\(\\sqrt{2}\\)."
+  },
+  {
+    "id": "mth_10",
+    "course": "MTH 101",
+    "question": "The sum of a rational number and an irrational number is always:",
+    "options": [
+      "Rational",
+      "Irrational",
+      "An integer",
+      "Complex but not real"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is Irrational."
+  },
+  {
+    "id": "mth_11",
+    "course": "MTH 101",
+    "question": "Which set of numbers is closed under division (excluding division by zero)?",
+    "options": [
+      "Integers",
+      "Natural numbers",
+      "Rational numbers",
+      "Irrational numbers"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is Rational numbers."
+  },
+  {
+    "id": "mth_12",
+    "course": "MTH 101",
+    "question": "Between any two distinct real numbers, there exists:",
+    "options": [
+      "Only one rational number",
+      "No rational numbers",
+      "Infinitely many rational numbers",
+      "Exactly two irrational numbers"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is Infinitely many rational numbers."
+  },
+  {
+    "id": "mth_13",
+    "course": "MTH 101",
+    "question": "If \\(x, y \\in \\mathbb{Z}\\), then \\(x - y\\) belongs to:",
+    "options": [
+      "\\(\\mathbb{N}\\)",
+      "\\(\\mathbb{Z}\\)",
+      "Irrational numbers",
+      "None of the above"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\mathbb{Z}\\)."
+  },
+  {
+    "id": "mth_14",
+    "course": "MTH 101",
+    "question": "Which of the following is NOT a real number?",
+    "options": [
+      "\\(0\\)",
+      "\\(\\pi\\)",
+      "\\(\\sqrt{-1}\\)",
+      "\\(-2.5\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(\\sqrt{-1}\\)."
+  },
+  {
+    "id": "mth_15",
+    "course": "MTH 101",
+    "question": "The multiplicative inverse of \\(\\sqrt{3}\\) is:",
+    "options": [
+      "\\(-\\sqrt{3}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{1}{\\sqrt{3}}\\)",
+      "1"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(\\frac{1}{\\sqrt{3}}\\)."
+  },
+  {
+    "id": "mth_16",
+    "course": "MTH 101",
+    "question": "The sum of the first \\(n\\) natural numbers is given by:",
+    "options": [
+      "\\(n(n+1)\\)",
+      "\\(\\frac{n(n+1)}{2}\\)",
+      "\\(n^2\\)",
+      "\\(\\frac{n(n-1)}{2}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\frac{n(n+1)}{2}\\)."
+  },
+  {
+    "id": "mth_17",
+    "course": "MTH 101",
+    "question": "In mathematical induction, the base case typically involves proving the statement for:",
+    "options": [
+      "\\(n = k\\)",
+      "\\(n = k+1\\)",
+      "\\(n = 1\\)",
+      "\\(n = \\infty\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(n = 1\\)."
+  },
+  {
+    "id": "mth_18",
+    "course": "MTH 101",
+    "question": "The common difference of the arithmetic sequence 3, 7, 11, 15... is:",
+    "options": [
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(7\\)",
+      "\\(11\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(4\\)."
+  },
+  {
+    "id": "mth_19",
+    "course": "MTH 101",
+    "question": "The sum to infinity of a geometric series exists if the common ratio \\(r\\) satisfies:",
+    "options": [
+      "\\(|r| > 1\\)",
+      "\\(|r| < 1\\)",
+      "\\(r = 1\\)",
+      "\\(r = 0\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(|r| < 1\\)."
+  },
+  {
+    "id": "mth_20",
+    "course": "MTH 101",
+    "question": "What is the 5th term of a geometric sequence where \\(a = 2\\) and \\(r = 3\\)?",
+    "options": [
+      "\\(54\\)",
+      "\\(162\\)",
+      "\\(486\\)",
+      "\\(30\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(162\\)."
+  },
+  {
+    "id": "mth_21",
+    "course": "MTH 101",
+    "question": "The roots of the quadratic equation \\(x^2 - 5x + 6 = 0\\) are:",
+    "options": [
+      "\\(-2, -3\\)",
+      "\\(2, 3\\)",
+      "\\(-1, 6\\)",
+      "\\(1, 6\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(2, 3\\)."
+  },
+  {
+    "id": "mth_22",
+    "course": "MTH 101",
+    "question": "If \\(\\alpha\\) and \\(\\beta\\) are roots of \\(ax^2 + bx + c = 0\\), then \\(\\alpha + \\beta =\\)",
+    "options": [
+      "\\(\\frac{b}{a}\\)",
+      "\\(-\\frac{b}{a}\\)",
+      "\\(\\frac{c}{a}\\)",
+      "\\(-\\frac{c}{a}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(-\\frac{b}{a}\\)."
+  },
+  {
+    "id": "mth_23",
+    "course": "MTH 101",
+    "question": "For the quadratic equation \\(ax^2 + bx + c = 0\\) to have equal roots, the discriminant must be:",
+    "options": [
+      "\\(> 0\\)",
+      "\\(< 0\\)",
+      "\\(= 0\\)",
+      "\\(= 1\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(= 0\\)."
+  },
+  {
+    "id": "mth_24",
+    "course": "MTH 101",
+    "question": "Expand \\((x + y)^3\\) using the Binomial Theorem:",
+    "options": [
+      "\\(x^3 + 3x^2y + 3xy^2 + y^3\\)",
+      "\\(x^3 + y^3\\)",
+      "\\(x^3 + 2x^2y + 2xy^2 + y^3\\)",
+      "\\(x^3 - 3x^2y + 3xy^2 - y^3\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(x^3 + 3x^2y + 3xy^2 + y^3\\)."
+  },
+  {
+    "id": "mth_25",
+    "course": "MTH 101",
+    "question": "What is the coefficient of \\(x^2\\) in the expansion of \\((1 + x)^4\\)?",
+    "options": [
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(1\\)",
+      "\\(8\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(6\\)."
+  },
+  {
+    "id": "mth_26",
+    "course": "MTH 101",
+    "question": "The imaginary unit \\(i\\) is defined as:",
+    "options": [
+      "\\(\\sqrt{1}\\)",
+      "\\(\\sqrt{-1}\\)",
+      "\\(-1\\)",
+      "\\(1\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\sqrt{-1}\\)."
+  },
+  {
+    "id": "mth_27",
+    "course": "MTH 101",
+    "question": "Simplify \\(i^4\\):",
+    "options": [
+      "\\(i\\)",
+      "\\(-1\\)",
+      "\\(-i\\)",
+      "\\(1\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct option is \\(1\\)."
+  },
+  {
+    "id": "mth_28",
+    "course": "MTH 101",
+    "question": "If \\(z = 3 + 4i\\), the complex conjugate \\(\\bar{z}\\) is:",
+    "options": [
+      "\\(3 - 4i\\)",
+      "\\(-3 + 4i\\)",
+      "\\(-3 - 4i\\)",
+      "\\(4 + 3i\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(3 - 4i\\)."
+  },
+  {
+    "id": "mth_29",
+    "course": "MTH 101",
+    "question": "Find the modulus of \\(z = 3 + 4i\\):",
+    "options": [
+      "\\(5\\)",
+      "\\(7\\)",
+      "\\(25\\)",
+      "\\(1\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(5\\)."
+  },
+  {
+    "id": "mth_30",
+    "course": "MTH 101",
+    "question": "In the Argand diagram, the x-axis represents the:",
+    "options": [
+      "Imaginary part",
+      "Real part",
+      "Modulus",
+      "Argument"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is Real part."
+  },
+  {
+    "id": "mth_31",
+    "course": "MTH 101",
+    "question": "Add \\(z_1 = 2 + 3i\\) and \\(z_2 = 1 - 2i\\):",
+    "options": [
+      "\\(3 + 5i\\)",
+      "\\(3 + i\\)",
+      "\\(1 + 5i\\)",
+      "\\(1 + i\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(3 + i\\)."
+  },
+  {
+    "id": "mth_32",
+    "course": "MTH 101",
+    "question": "Multiply \\((1 + i)(1 - i)\\):",
+    "options": [
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(2i\\)",
+      "\\(1\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(2\\)."
+  },
+  {
+    "id": "mth_33",
+    "course": "MTH 101",
+    "question": "De Moivre's Theorem states that \\((\\cos\\theta + i\\sin\\theta)^n =\\)",
+    "options": [
+      "\\(\\cos(n\\theta) - i\\sin(n\\theta)\\)",
+      "\\(n(\\cos\\theta + i\\sin\\theta)\\)",
+      "\\(\\cos(n\\theta) + i\\sin(n\\theta)\\)",
+      "\\(\\cos^n\\theta + i\\sin^n\\theta\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(\\cos(n\\theta) + i\\sin(n\\theta)\\)."
+  },
+  {
+    "id": "mth_34",
+    "course": "MTH 101",
+    "question": "Convert the complex number \\(z = 1 + \\sqrt{3}i\\) to polar form.",
+    "options": [
+      "\\(2\\left(\\cos\\frac{\\pi}{6} + i\\sin\\frac{\\pi}{6}\\right)\\)",
+      "\\(2\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right)\\)",
+      "\\(\\sqrt{2}\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right)\\)",
+      "\\(2\\left(\\cos\\frac{\\pi}{4} + i\\sin\\frac{\\pi}{4}\\right)\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(2\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right)\\)."
+  },
+  {
+    "id": "mth_35",
+    "course": "MTH 101",
+    "question": "How many distinct nth roots of unity are there?",
+    "options": [
+      "\\(1\\)",
+      "\\(n\\)",
+      "\\(n-1\\)",
+      "\\(2n\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(n\\)."
+  },
+  {
+    "id": "mth_36",
+    "course": "MTH 101",
+    "question": "The sum of the nth roots of unity for \\(n > 1\\) is:",
+    "options": [
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(n\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(0\\)."
+  },
+  {
+    "id": "mth_37",
+    "course": "MTH 101",
+    "question": "Which of the following represents the argument of \\(z = 1 + i\\)?",
+    "options": [
+      "\\(\\frac{\\pi}{2}\\)",
+      "\\(\\frac{\\pi}{3}\\)",
+      "\\(\\frac{\\pi}{4}\\)",
+      "\\(\\pi\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(\\frac{\\pi}{4}\\)."
+  },
+  {
+    "id": "mth_38",
+    "course": "MTH 101",
+    "question": "Convert \\(180^\\circ\\) to radians.",
+    "options": [
+      "\\(\\frac{\\pi}{2}\\)",
+      "\\(\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(\\frac{3\\pi}{2}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\pi\\)."
+  },
+  {
+    "id": "mth_39",
+    "course": "MTH 101",
+    "question": "The arc length \\(s\\) of a circle of radius \\(r\\) subtending an angle \\(\\theta\\) in radians is:",
+    "options": [
+      "\\(s = \\frac{1}{2}r^2\\theta\\)",
+      "\\(s = r\\theta\\)",
+      "\\(s = \\pi r^2 \\theta\\)",
+      "\\(s = \\frac{\\theta}{r}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(s = r\\theta\\)."
+  },
+  {
+    "id": "mth_40",
+    "course": "MTH 101",
+    "question": "What is the exact value of \\(\\sin(30^\\circ)\\)?",
+    "options": [
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{\\sqrt{2}}{2}\\)",
+      "1"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\frac{1}{2}\\)."
+  },
+  {
+    "id": "mth_41",
+    "course": "MTH 101",
+    "question": "In which quadrant is the tangent function positive?",
+    "options": [
+      "First and Second",
+      "First and Third",
+      "Second and Fourth",
+      "Third and Fourth"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is First and Third."
+  },
+  {
+    "id": "mth_42",
+    "course": "MTH 101",
+    "question": "The Pythagorean identity states that:",
+    "options": [
+      "\\(\\sin^2\\theta - \\cos^2\\theta = 1\\)",
+      "\\(\\sin^2\\theta + \\cos^2\\theta = 0\\)",
+      "\\(\\tan^2\\theta = 1\\)",
+      "\\(\\sin^2\\theta + \\cos^2\\theta = 1\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct option is \\(\\sin^2\\theta + \\cos^2\\theta = 1\\)."
+  },
+  {
+    "id": "mth_43",
+    "course": "MTH 101",
+    "question": "The addition formula for sine is \\(\\sin(A + B) =\\)",
+    "options": [
+      "\\(\\sin A \\cos B + \\cos A \\sin B\\)",
+      "\\(\\sin A \\sin B - \\cos A \\cos B\\)",
+      "\\(\\cos A \\cos B - \\sin A \\sin B\\)",
+      "\\(\\sin A \\cos B - \\cos A \\sin B\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(\\sin A \\cos B + \\cos A \\sin B\\)."
+  },
+  {
+    "id": "mth_44",
+    "course": "MTH 101",
+    "question": "Using the double angle formula, \\(\\cos(2\\theta)\\) is equivalent to:",
+    "options": [
+      "\\(2\\sin\\theta\\cos\\theta\\)",
+      "\\(\\cos^2\\theta - \\sin^2\\theta\\)",
+      "\\(1 - 2\\cos^2\\theta\\)",
+      "\\(2\\sin^2\\theta - 1\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\cos^2\\theta - \\sin^2\\theta\\)."
+  },
+  {
+    "id": "mth_45",
+    "course": "MTH 101",
+    "question": "The factor formula for \\(\\sin A + \\sin B\\) is:",
+    "options": [
+      "\\(2 \\sin\\left(\\frac{A+B}{2}\\right) \\cos\\left(\\frac{A-B}{2}\\right)\\)",
+      "\\(2 \\cos\\left(\\frac{A+B}{2}\\right) \\sin\\left(\\frac{A-B}{2}\\right)\\)",
+      "\\(2 \\cos\\left(\\frac{A+B}{2}\\right) \\cos\\left(\\frac{A-B}{2}\\right)\\)",
+      "\\(-2 \\sin\\left(\\frac{A+B}{2}\\right) \\sin\\left(\\frac{A-B}{2}\\right)\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(2 \\sin\\left(\\frac{A+B}{2}\\right) \\cos\\left(\\frac{A-B}{2}\\right)\\)."
+  },
+  {
+    "id": "mth_46",
+    "course": "MTH 101",
+    "question": "Calculate the principal argument of \\(-1 - i\\).",
+    "options": [
+      "\\(\\frac{\\pi}{4}\\)",
+      "\\(-\\frac{3\\pi}{4}\\)",
+      "\\(\\frac{3\\pi}{4}\\)",
+      "\\(-\\frac{\\pi}{4}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(-\\frac{3\\pi}{4}\\)."
+  },
+  {
+    "id": "mth_47",
+    "course": "MTH 101",
+    "question": "If \\(z = r(\\cos\\theta + i\\sin\\theta)\\), then \\(z^{-1}\\) is:",
+    "options": [
+      "\\(r(\\cos\\theta - i\\sin\\theta)\\)",
+      "\\(\\frac{1}{r}(\\cos\\theta + i\\sin\\theta)\\)",
+      "\\(\\frac{1}{r}(\\cos\\theta - i\\sin\\theta)\\)",
+      "\\(-r(\\cos\\theta + i\\sin\\theta)\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(\\frac{1}{r}(\\cos\\theta - i\\sin\\theta)\\)."
+  },
+  {
+    "id": "mth_48",
+    "course": "MTH 101",
+    "question": "Evaluate \\(\\sec^2\\theta - \\tan^2\\theta\\).",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "\\(\\csc^2\\theta\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is 1."
+  },
+  {
+    "id": "mth_49",
+    "course": "MTH 101",
+    "question": "What is the area of a circular sector of radius 4 cm subtending an angle of \\(\\frac{\\pi}{2}\\) radians?",
+    "options": [
+      "\\(4\\pi\\text{ cm}^2\\)",
+      "\\(2\\pi\\text{ cm}^2\\)",
+      "\\(8\\pi\\text{ cm}^2\\)",
+      "\\(16\\pi\\text{ cm}^2\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(4\\pi\\text{ cm}^2\\)."
+  },
+  {
+    "id": "mth_50",
+    "course": "MTH 101",
+    "question": "The value of \\(\\cos(90^\\circ + \\theta)\\) is equal to:",
+    "options": [
+      "\\(\\sin\\theta\\)",
+      "\\(-\\sin\\theta\\)",
+      "\\(\\cos\\theta\\)",
+      "\\(-\\cos\\theta\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(-\\sin\\theta\\)."
+  },
+  {
+    "id": "mth_51",
+    "course": "MTH 101",
+    "question": "Let \\(S_n\\) be the sum of a geometric series. As \\(n \\rightarrow \\infty\\), if \\(|r| < 1\\), \\(S_n \\rightarrow\\)",
+    "options": [
+      "\\(\\frac{a}{1-r}\\)",
+      "\\(\\infty\\)",
+      "0",
+      "\\(\\frac{a}{r-1}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(\\frac{a}{1-r}\\)."
+  },
+  {
+    "id": "mth_52",
+    "course": "MTH 101",
+    "question": "Solve the equation \\(x^2 + 1 = 0\\) over the complex numbers.",
+    "options": [
+      "\\(x = 1, -1\\)",
+      "\\(x = i, -i\\)",
+      "\\(x = 1 + i, 1 - i\\)",
+      "No solution exists"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(x = i, -i\\)."
+  },
+  {
+    "id": "mth_53",
+    "course": "MTH 101",
+    "question": "If \\(\\omega\\) is a complex cube root of unity, then \\(1 + \\omega + \\omega^2 =\\)",
+    "options": [
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(\\omega\\)",
+      "\\(0\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct option is \\(0\\)."
+  },
+  {
+    "id": "mth_54",
+    "course": "MTH 101",
+    "question": "Find the roots of \\(2x^2 - 4x + 2 = 0\\).",
+    "options": [
+      "\\(2, -2\\)",
+      "\\(1, 1\\)",
+      "\\(1, -1\\)",
+      "\\(0, 2\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(1, 1\\)."
+  },
+  {
+    "id": "mth_55",
+    "course": "MTH 101",
+    "question": "Identify the rational number from the following:",
+    "options": [
+      "\\(\\sqrt{5}\\)",
+      "\\(e\\)",
+      "\\(0.333...\\)",
+      "\\(\\pi\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(0.333...\\)."
+  },
+  {
+    "id": "mth_56",
+    "course": "MTH 101",
+    "question": "If \\(n(A) = 10\\), \\(n(B) = 15\\), and \\(n(A \\cup B) = 20\\), find \\(n(A \\cap B)\\).",
+    "options": [
+      "\\(5\\)",
+      "\\(10\\)",
+      "\\(25\\)",
+      "\\(0\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(5\\)."
+  },
+  {
+    "id": "mth_57",
+    "course": "MTH 101",
+    "question": "Which represents De Morgan's Law?",
+    "options": [
+      "\\((A \\cup B)^c = A^c \\cup B^c\\)",
+      "\\((A \\cap B)^c = A^c \\cup B^c\\)",
+      "\\(A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)\\)",
+      "\\(A \\cap (B \\cup C) = (A \\cap B) \\cup C\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\((A \\cap B)^c = A^c \\cup B^c\\)."
+  },
+  {
+    "id": "mth_58",
+    "course": "MTH 101",
+    "question": "The binomial coefficient \\(\\binom{n}{r}\\) is computed as:",
+    "options": [
+      "\\(\\frac{n!}{r!(n-r)!}\\)",
+      "\\(\\frac{n!}{(n-r)!}\\)",
+      "\\(\\frac{n!}{r!}\\)",
+      "\\(n!\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(\\frac{n!}{r!(n-r)!}\\)."
+  },
+  {
+    "id": "mth_59",
+    "course": "MTH 101",
+    "question": "Evaluate \\(\\binom{5}{2}\\).",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "120"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is 10."
+  },
+  {
+    "id": "mth_60",
+    "course": "MTH 101",
+    "question": "The modulus of \\(z = -5 + 12i\\) is:",
+    "options": [
+      "\\(17\\)",
+      "\\(169\\)",
+      "\\(13\\)",
+      "\\(-13\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(13\\)."
+  },
+  {
+    "id": "mth_61",
+    "course": "MTH 101",
+    "question": "For the series 1, 4, 9, 16... the nth term is given by:",
+    "options": [
+      "\\(2n\\)",
+      "\\(n^2\\)",
+      "\\(2n-1\\)",
+      "\\(n^3\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(n^2\\)."
+  },
+  {
+    "id": "mth_62",
+    "course": "MTH 101",
+    "question": "If \\(z = -1 + \\sqrt{3}i\\), what is its modulus and principal argument?",
+    "options": [
+      "\\(r = 2, \\theta = \\frac{\\pi}{3}\\)",
+      "\\(r = 2, \\theta = \\frac{2\\pi}{3}\\)",
+      "\\(r = 4, \\theta = \\frac{2\\pi}{3}\\)",
+      "\\(r = 2, \\theta = -\\frac{\\pi}{3}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(r = 2, \\theta = \\frac{2\\pi}{3}\\)."
+  },
+  {
+    "id": "mth_63",
+    "course": "MTH 101",
+    "question": "Find \\(\\sin(15^\\circ)\\) using the subtraction formula \\(\\sin(45^\\circ - 30^\\circ)\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{6} - \\sqrt{2}}{4}\\)",
+      "\\(\\frac{\\sqrt{6} + \\sqrt{2}}{4}\\)",
+      "\\(\\frac{\\sqrt{3} - 1}{2}\\)",
+      "\\(\\frac{\\sqrt{2}}{4}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(\\frac{\\sqrt{6} - \\sqrt{2}}{4}\\)."
+  },
+  {
+    "id": "mth_64",
+    "course": "MTH 101",
+    "question": "The product of the roots of \\(ax^2 + bx + c = 0\\) is:",
+    "options": [
+      "\\(\\frac{c}{a}\\)",
+      "\\(-\\frac{b}{a}\\)",
+      "\\(-\\frac{c}{a}\\)",
+      "\\(\\frac{b}{a}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(\\frac{c}{a}\\)."
+  },
+  {
+    "id": "mth_65",
+    "course": "MTH 101",
+    "question": "If \\(\\sin\\theta = \\frac{3}{5}\\) and \\(\\theta\\) is acute, \\(\\cos\\theta =\\)",
+    "options": [
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{4}{3}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\frac{4}{5}\\)."
+  },
+  {
+    "id": "mth_66",
+    "course": "MTH 101",
+    "question": "What is the period of the function \\(y = \\sin x\\)?",
+    "options": [
+      "\\(\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(\\frac{\\pi}{2}\\)",
+      "360"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(2\\pi\\)."
+  },
+  {
+    "id": "mth_67",
+    "course": "MTH 101",
+    "question": "A polynomial equation of degree \\(n\\) with real coefficients has exactly \\(n\\) roots in:",
+    "options": [
+      "The set of Real numbers",
+      "The set of Rational numbers",
+      "The set of Complex numbers",
+      "The set of Integers"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is The set of Complex numbers."
+  },
+  {
+    "id": "mth_68",
+    "course": "MTH 101",
+    "question": "Solve \\(|x - 2| = 5\\).",
+    "options": [
+      "\\(x = 7\\)",
+      "\\(x = 3 \\text{ or } -3\\)",
+      "\\(x = 7 \\text{ or } -3\\)",
+      "\\(x = -7 \\text{ or } 3\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(x = 7 \\text{ or } -3\\)."
+  },
+  {
+    "id": "mth_69",
+    "course": "MTH 101",
+    "question": "Two sets are disjoint if and only if:",
+    "options": [
+      "\\(A \\cup B = \\emptyset\\)",
+      "\\(A \\subseteq B\\)",
+      "\\(A \\cap B = \\emptyset\\)",
+      "\\(A = B\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(A \\cap B = \\emptyset\\)."
+  },
+  {
+    "id": "mth_70",
+    "course": "MTH 101",
+    "question": "Which property states that \\(A \\cup (B \\cup C) = (A \\cup B) \\cup C\\)?",
+    "options": [
+      "Commutative",
+      "Distributive",
+      "Associative",
+      "Identity"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is Associative."
+  },
+  {
+    "id": "mth_71",
+    "course": "MTH 101",
+    "question": "The number \\(e \\approx 2.718\\) is an example of:",
+    "options": [
+      "A rational integer",
+      "An irrational real number",
+      "A complex non-real number",
+      "A whole number"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is An irrational real number."
+  },
+  {
+    "id": "mth_72",
+    "course": "MTH 101",
+    "question": "The sequence \\(1, 1, 2, 3, 5, 8...\\) is known as the:",
+    "options": [
+      "Arithmetic progression",
+      "Geometric progression",
+      "Fibonacci sequence",
+      "Harmonic sequence"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is Fibonacci sequence."
+  },
+  {
+    "id": "mth_73",
+    "course": "MTH 101",
+    "question": "Simplify \\(\\frac{1}{i}\\).",
+    "options": [
+      "\\(i\\)",
+      "\\(-i\\)",
+      "1",
+      "-1"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(-i\\)."
+  },
+  {
+    "id": "mth_74",
+    "course": "MTH 101",
+    "question": "Use the binomial theorem to expand \\((a - b)^2\\).",
+    "options": [
+      "\\(a^2 - b^2\\)",
+      "\\(a^2 + 2ab + b^2\\)",
+      "\\(a^2 - 2ab - b^2\\)",
+      "\\(a^2 - 2ab + b^2\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct option is \\(a^2 - 2ab + b^2\\)."
+  },
+  {
+    "id": "mth_75",
+    "course": "MTH 101",
+    "question": "The equation \\(z^4 = 1\\) has roots:",
+    "options": [
+      "\\(1, -1\\)",
+      "\\(1, -1, i, -i\\)",
+      "\\(1, i\\)",
+      "\\(1, 2, 3, 4\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(1, -1, i, -i\\)."
+  },
+  {
+    "id": "mth_76",
+    "course": "MTH 101",
+    "question": "What is the common ratio in the sequence \\(5, 10, 20, 40...\\)?",
+    "options": [
+      "\\(2\\)",
+      "\\(5\\)",
+      "\\(10\\)",
+      "\\(0.5\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(2\\)."
+  },
+  {
+    "id": "mth_77",
+    "course": "MTH 101",
+    "question": "Find \\(\\tan(A - B)\\) if it expands to:",
+    "options": [
+      "\\(\\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}\\)",
+      "\\(\\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}\\)",
+      "\\(\\frac{\\tan A - \\tan B}{1 - \\tan A \\tan B}\\)",
+      "\\(\\tan A - \\tan B\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}\\)."
+  },
+  {
+    "id": "mth_78",
+    "course": "MTH 101",
+    "question": "The identity \\(\\cos(2\\theta) = \\cos^2\\theta - \\sin^2\\theta\\) is derived from:",
+    "options": [
+      "Pythagorean theorem",
+      "Addition formula",
+      "De Moivre's theorem only",
+      "Factor formula"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is Addition formula."
+  },
+  {
+    "id": "mth_79",
+    "course": "MTH 101",
+    "question": "What is the value of \\(i^{15}\\)?",
+    "options": [
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(i\\)",
+      "\\(-i\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct option is \\(-i\\)."
+  },
+  {
+    "id": "mth_80",
+    "course": "MTH 101",
+    "question": "A subset that does not contain all elements of the parent set is a:",
+    "options": [
+      "Power set",
+      "Null set",
+      "Proper subset",
+      "Superset"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is Proper subset."
+  },
+  {
+    "id": "mth_81",
+    "course": "MTH 101",
+    "question": "In a class of 40 students, 20 like math and 25 like physics. If 10 like both, how many like neither?",
+    "options": [
+      "\\(5\\)",
+      "\\(10\\)",
+      "\\(15\\)",
+      "\\(0\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(5\\)."
+  },
+  {
+    "id": "mth_82",
+    "course": "MTH 101",
+    "question": "The power set of \\(\\{a, b\\}\\) is:",
+    "options": [
+      "\\(\\{ \\{a\\}, \\{b\\} \\}\\)",
+      "\\(\\{ \\emptyset, \\{a\\}, \\{b\\}, \\{a, b\\} \\}\\)",
+      "\\(\\{ \\{a, b\\} \\}\\)",
+      "\\(\\{ \\emptyset, a, b \\}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\{ \\emptyset, \\{a\\}, \\{b\\}, \\{a, b\\} \\}\\)."
+  },
+  {
+    "id": "mth_83",
+    "course": "MTH 101",
+    "question": "The rational number \\(\\frac{1}{3}\\) in decimal form is:",
+    "options": [
+      "Terminating",
+      "Non-terminating and non-repeating",
+      "Non-terminating and repeating",
+      "Irrational"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is Non-terminating and repeating."
+  },
+  {
+    "id": "mth_84",
+    "course": "MTH 101",
+    "question": "Every integer is also a:",
+    "options": [
+      "Natural number",
+      "Irrational number",
+      "Rational number",
+      "Complex number strictly with non-zero imaginary part"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is Rational number."
+  },
+  {
+    "id": "mth_85",
+    "course": "MTH 101",
+    "question": "Find the sum of the first 10 terms of an arithmetic progression where \\(a = 2\\) and \\(d = 3\\).",
+    "options": [
+      "\\(140\\)",
+      "\\(155\\)",
+      "\\(170\\)",
+      "\\(125\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(155\\)."
+  },
+  {
+    "id": "mth_86",
+    "course": "MTH 101",
+    "question": "If \\(z = x + iy\\), then \\(z \\bar{z}\\) equals:",
+    "options": [
+      "\\(x^2 - y^2\\)",
+      "\\(x^2 + y^2\\)",
+      "\\(x^2 + 2ixy - y^2\\)",
+      "\\(2x\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(x^2 + y^2\\)."
+  },
+  {
+    "id": "mth_87",
+    "course": "MTH 101",
+    "question": "Write \\(\\frac{1}{1+i}\\) in standard form \\(a + bi\\).",
+    "options": [
+      "\\(\\frac{1}{2} - \\frac{1}{2}i\\)",
+      "\\(\\frac{1}{2} + \\frac{1}{2}i\\)",
+      "\\(1 - i\\)",
+      "\\(-1 + i\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(\\frac{1}{2} - \\frac{1}{2}i\\)."
+  },
+  {
+    "id": "mth_88",
+    "course": "MTH 101",
+    "question": "A quadratic equation with roots 3 and -4 is:",
+    "options": [
+      "\\(x^2 - x - 12 = 0\\)",
+      "\\(x^2 + x - 12 = 0\\)",
+      "\\(x^2 - 7x + 12 = 0\\)",
+      "\\(x^2 + 7x + 12 = 0\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(x^2 + x - 12 = 0\\)."
+  },
+  {
+    "id": "mth_89",
+    "course": "MTH 101",
+    "question": "Using mathematical induction, to prove \\(P(n)\\), after showing \\(P(1)\\) is true, we assume \\(P(k)\\) is true to prove:",
+    "options": [
+      "\\(P(k-1)\\)",
+      "\\(P(k^2)\\)",
+      "\\(P(k+1)\\)",
+      "\\(P(n)\\) directly"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(P(k+1)\\)."
+  },
+  {
+    "id": "mth_90",
+    "course": "MTH 101",
+    "question": "Which of the following is equivalent to \\(n!\\)?",
+    "options": [
+      "\\(n(n-1)!\\)",
+      "\\((n+1)! - n\\)",
+      "\\(n(n+1)\\)",
+      "\\(n + (n-1)!\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(n(n-1)!\\)."
+  },
+  {
+    "id": "mth_91",
+    "course": "MTH 101",
+    "question": "If \\(\\sin\\theta = \\cos\\theta\\) and \\(0 < \\theta < \\frac{\\pi}{2}\\), then \\(\\theta =\\)",
+    "options": [
+      "\\(\\frac{\\pi}{6}\\)",
+      "\\(\\frac{\\pi}{4}\\)",
+      "\\(\\frac{\\pi}{3}\\)",
+      "\\(\\frac{\\pi}{2}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\frac{\\pi}{4}\\)."
+  },
+  {
+    "id": "mth_92",
+    "course": "MTH 101",
+    "question": "The identity for \\(\\sin(2\\theta)\\) is:",
+    "options": [
+      "\\(2\\sin\\theta\\cos\\theta\\)",
+      "\\(\\cos^2\\theta - \\sin^2\\theta\\)",
+      "\\(\\sin\\theta + \\cos\\theta\\)",
+      "\\(1 - 2\\sin^2\\theta\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(2\\sin\\theta\\cos\\theta\\)."
+  },
+  {
+    "id": "mth_93",
+    "course": "MTH 101",
+    "question": "Express \\(120^\\circ\\) in radians.",
+    "options": [
+      "\\(\\frac{2\\pi}{3}\\)",
+      "\\(\\frac{3\\pi}{4}\\)",
+      "\\(\\frac{\\pi}{2}\\)",
+      "\\(\\frac{5\\pi}{6}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct option is \\(\\frac{2\\pi}{3}\\)."
+  },
+  {
+    "id": "mth_94",
+    "course": "MTH 101",
+    "question": "The nth root of a complex number can be found using:",
+    "options": [
+      "Binomial Theorem",
+      "De Moivre's Theorem",
+      "Pythagorean Theorem",
+      "Factor Theorem"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is De Moivre's Theorem."
+  },
+  {
+    "id": "mth_95",
+    "course": "MTH 101",
+    "question": "Find the general solution for \\(\\sin\\theta = 0\\).",
+    "options": [
+      "\\(\\theta = 2n\\pi\\)",
+      "\\(\\theta = n\\pi\\)",
+      "\\(\\theta = \\frac{\\pi}{2} + n\\pi\\)",
+      "\\(\\theta = n\\pi + \\frac{\\pi}{4}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(\\theta = n\\pi\\)."
+  },
+  {
+    "id": "mth_96",
+    "course": "MTH 101",
+    "question": "Which of these is the correct formula for \\(\\cos A + \\cos B\\)?",
+    "options": [
+      "\\(2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)\\)",
+      "\\(2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)\\)",
+      "\\(-2\\sin\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)\\)",
+      "\\(2\\cos\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)\\)."
+  },
+  {
+    "id": "mth_97",
+    "course": "MTH 101",
+    "question": "In the expansion of \\((x+y)^n\\), the number of terms is:",
+    "options": [
+      "\\(n-1\\)",
+      "\\(n\\)",
+      "\\(n+1\\)",
+      "\\(2n\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(n+1\\)."
+  },
+  {
+    "id": "mth_98",
+    "course": "MTH 101",
+    "question": "What is the imaginary part of \\(3 - 7i\\)?",
+    "options": [
+      "\\(3\\)",
+      "\\(-7\\)",
+      "\\(-7i\\)",
+      "\\(7\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is \\(-7\\)."
+  },
+  {
+    "id": "mth_99",
+    "course": "MTH 101",
+    "question": "If a quadratic equation has complex roots, they must occur in:",
+    "options": [
+      "Pairs of reciprocal numbers",
+      "Conjugate pairs",
+      "Pairs of negative inverses",
+      "Identical pairs"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct option is Conjugate pairs."
+  },
+  {
+    "id": "mth_100",
+    "course": "MTH 101",
+    "question": "Evaluate \\(\\cos(60^\\circ)\\).",
+    "options": [
+      "1",
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "0"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct option is \\(\\frac{1}{2}\\)."
+  },
+  {
+    "id": "mth_101",
+    "course": "MTH 101",
+    "question": "In a survey of \\(100\\) university freshmen, \\(50\\) study Mathematics (\\(M\\)), \\(45\\) study Physics (\\(P\\)), \\(40\\) study Chemistry (\\(C\\)), \\(20\\) study \\(M \\cap P\\), \\(18\\) study \\(P \\cap C\\), \\(15\\) study \\(M \\cap C\\), and \\(12\\) study none of the three. How many students study ALL three courses \\(n(M \\cap P \\cap C)\\)?",
+    "options": [
+      "\\(6\\)",
+      "\\(10\\)",
+      "\\(8\\)",
+      "\\(5\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Here \\(n(M \\cup P \\cup C) = 100 - 12 = 88\\). Using \\(88 = 50 + 45 + 40 - (20 + 18 + 15) + x = 82 + x\\), we find \\(x = 6\\)."
+  },
+  {
+    "id": "mth_102",
+    "course": "MTH 101",
+    "question": "Using the same survey of \\(100\\) freshmen where \\(n(M)=50, n(P)=45, n(C)=40, n(M\\cap P)=20, n(P\\cap C)=18, n(M\\cap C)=15\\), and \\(n(M\\cap P\\cap C)=6\\), how many students study Mathematics ONLY?",
+    "options": [
+      "\\(21\\)",
+      "\\(15\\)",
+      "\\(27\\)",
+      "\\(19\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "\\(n(M\\text{ only}) = n(M) - n(M\\cap P) - n(M\\cap C) + n(M\\cap P\\cap C) = 50 - 20 - 15 + 6 = 21\\)."
+  },
+  {
+    "id": "mth_103",
+    "course": "MTH 101",
+    "question": "For any two sets \\(A\\) and \\(B\\), the symmetric difference \\(A \\Delta B\\) is defined as \\((A \\setminus B) \\cup (B \\setminus A)\\). Which of the following is equivalent to \\(A \\Delta B\\)?",
+    "options": [
+      "\\(A^c \\cap B^c\\)",
+      "\\((A \\cup B) \\setminus (A \\cap B)\\)",
+      "\\((A \\cup B)^c\\)",
+      "\\((A \\cap B) \\setminus (A \\cup B)\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Elements in either \\(A\\) or \\(B\\) but not in both form \\((A \\cup B) \\setminus (A \\cap B)\\)."
+  },
+  {
+    "id": "mth_104",
+    "course": "MTH 101",
+    "question": "If a finite set \\(A\\) has \\(m\\) elements and a finite set \\(B\\) has \\(n\\) elements, and the number of subsets of \\(A\\) is \\(56\\) more than the number of subsets of \\(B\\), find \\((m, n)\\).",
+    "options": [
+      "\\(m = 5,\\; n = 3\\)",
+      "\\(m = 7,\\; n = 4\\)",
+      "\\(m = 6,\\; n = 4\\)",
+      "\\(m = 6,\\; n = 3\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "We have \\(2^m - 2^n = 56 = 64 - 8 = 2^6 - 2^3\\), so \\(m = 6\\) and \\(n = 3\\)."
+  },
+  {
+    "id": "mth_105",
+    "course": "MTH 101",
+    "question": "Simplify the nested surd \\(\\sqrt{7 + 4\\sqrt{3}}\\) into the form \\(a + b\\sqrt{3}\\).",
+    "options": [
+      "\\(2 + 2\\sqrt{3}\\)",
+      "\\(2 + \\sqrt{3}\\)",
+      "\\(3 + \\sqrt{3}\\)",
+      "\\(1 + 2\\sqrt{3}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Notice that \\((2 + \\sqrt{3})^2 = 4 + 3 + 4\\sqrt{3} = 7 + 4\\sqrt{3}\\). Since \\(2 + \\sqrt{3} > 0\\), the square root is \\(2 + \\sqrt{3}\\)."
+  },
+  {
+    "id": "mth_106",
+    "course": "MTH 101",
+    "question": "If \\(x = \\frac{1}{2 - \\sqrt{3}}\\), find the exact value of \\(x + \\frac{1}{x}\\).",
+    "options": [
+      "\\(14\\)",
+      "\\(4\\)",
+      "\\(7\\)",
+      "\\(2\\sqrt{3}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Rationalizing the denominator gives \\(x = 2 + \\sqrt{3}\\), while \\(1/x = 2 - \\sqrt{3}\\). Their sum is \\((2 + \\sqrt{3}) + (2 - \\sqrt{3}) = 4\\)."
+  },
+  {
+    "id": "mth_107",
+    "course": "MTH 101",
+    "question": "If \\(x = 3 + 2\\sqrt{2}\\), evaluate \\(x^2 + \\frac{1}{x^2}\\).",
+    "options": [
+      "\\(32\\)",
+      "\\(34\\)",
+      "\\(18\\)",
+      "\\(36\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Since \\(1/x = 3 - 2\\sqrt{2}\\), \\(x + 1/x = 6\\). Squaring gives \\(x^2 + 2 + 1/x^2 = 36 \\Rightarrow x^2 + 1/x^2 = 34\\)."
+  },
+  {
+    "id": "mth_108",
+    "course": "MTH 101",
+    "question": "Express the repeating decimal \\(0.2\\overline{36} = 0.2363636\\dots\\) as a simplified rational fraction.",
+    "options": [
+      "\\(\\frac{11}{45}\\)",
+      "\\(\\frac{26}{110}\\)",
+      "\\(\\frac{13}{55}\\)",
+      "\\(\\frac{236}{999}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Let \\(x = 0.23636\\dots\\); then \\(1000x - 10x = 236.36\\dots - 2.36\\dots \\Rightarrow 990x = 234 \\Rightarrow x = \\frac{234}{990} = \\frac{13}{55}\\)."
+  },
+  {
+    "id": "mth_109",
+    "course": "MTH 101",
+    "question": "Solve the absolute value inequality \\(|2x - 5| < 3\\).",
+    "options": [
+      "\\(-4 < x < -1\\)",
+      "\\(1 < x < 4\\)",
+      "\\(-1 < x < 4\\)",
+      "\\(x < 1 \\text{ or } x > 4\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "\\(-3 < 2x - 5 < 3 \\Rightarrow 2 < 2x < 8 \\Rightarrow 1 < x < 4\\)."
+  },
+  {
+    "id": "mth_110",
+    "course": "MTH 101",
+    "question": "Solve the rational inequality \\(\\frac{x - 3}{x + 2} \\le 0\\).",
+    "options": [
+      "\\(-3 \\le x < 2\\)",
+      "\\(x < -2 \\text{ or } x \\ge 3\\)",
+      "\\(-2 < x \\le 3\\)",
+      "\\(-2 \\le x \\le 3\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Critical points are \\(x = -2\\) (excluded since denominator cannot be zero) and \\(x = 3\\). Sign analysis shows the fraction is non-positive on \\((-2, 3]\\)."
+  },
+  {
+    "id": "mth_111",
+    "course": "MTH 101",
+    "question": "For any sets \\(A, B, C\\), simplify the set expression \\(A \\cap (A^c \\cup B)\\).",
+    "options": [
+      "\\(A \\cap B\\)",
+      "\\(\\emptyset\\)",
+      "\\(B\\)",
+      "\\(A \\cup B\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "By distributivity, \\(A \\cap (A^c \\cup B) = (A \\cap A^c) \\cup (A \\cap B) = \\emptyset \\cup (A \\cap B) = A \\cap B\\)."
+  },
+  {
+    "id": "mth_112",
+    "course": "MTH 101",
+    "question": "What is the cardinality of the power set of the power set of a 2-element set, i.e., \\(n(\\mathcal{P}(\\mathcal{P}(\\{a, b\\})))\\)?",
+    "options": [
+      "\\(32\\)",
+      "\\(8\\)",
+      "\\(4\\)",
+      "\\(16\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Since \\(n(\\{a, b\\}) = 2\\), \\(n(\\mathcal{P}(A)) = 2^2 = 4\\), and \\(n(\\mathcal{P}(\\mathcal{P}(A))) = 2^4 = 16\\)."
+  },
+  {
+    "id": "mth_113",
+    "course": "MTH 101",
+    "question": "Using mathematical induction, the closed-form formula for the sum of squares \\(\\sum_{k=1}^n k^2 = 1^2 + 2^2 + \\dots + n^2\\) is:",
+    "options": [
+      "\\(\\frac{n(n+1)(2n+1)}{6}\\)",
+      "\\(\\frac{n(n+1)(n+2)}{6}\\)",
+      "\\(\\left(\\frac{n(n+1)}{2}\\right)^2\\)",
+      "\\(\\frac{n(2n-1)(2n+1)}{3}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Standard induction proves \\(\\sum_{k=1}^n k^2 = \\frac{n(n+1)(2n+1)}{6}\\)."
+  },
+  {
+    "id": "mth_114",
+    "course": "MTH 101",
+    "question": "The closed-form formula for the sum of the first \\(n\\) cubes \\(\\sum_{k=1}^n k^3 = 1^3 + 2^3 + \\dots + n^3\\) is:",
+    "options": [
+      "\\(\\left[\\frac{n(n+1)}{2}\\right]^2\\)",
+      "\\(\\frac{n^2(n+1)}{4}\\)",
+      "\\(\\frac{n(n+1)(n+2)(n+3)}{4}\\)",
+      "\\(\\frac{n(n+1)(2n+1)}{6}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "By mathematical induction, the sum of the first \\(n\\) cubes equals the square of the sum of the first \\(n\\) natural numbers: \\(\\left[\\frac{n(n+1)}{2}\\right]^2\\)."
+  },
+  {
+    "id": "mth_115",
+    "course": "MTH 101",
+    "question": "By mathematical induction, for all integers \\(n \\ge 1\\), the expression \\(7^n - 2^n\\) is always divisible by:",
+    "options": [
+      "\\(5\\)",
+      "\\(9\\)",
+      "\\(3\\)",
+      "\\(7\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "For \\(n = 1\\), \\(7^1 - 2^1 = 5\\); and \\(7^{k+1} - 2^{k+1} = 7(7^k - 2^k) + 5\\cdot 2^k\\), which is always a multiple of \\(5\\)."
+  },
+  {
+    "id": "mth_116",
+    "course": "MTH 101",
+    "question": "The sum of the first \\(n\\) terms of a sequence is given by \\(S_n = 3n^2 + 4n\\). Find the \\(10\\text{th}\\) term \\(T_{10}\\) of the sequence.",
+    "options": [
+      "\\(57\\)",
+      "\\(64\\)",
+      "\\(61\\)",
+      "\\(340\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "\\(T_n = S_n - S_{n-1} = (3n^2 + 4n) - (3(n-1)^2 + 4(n-1)) = 6n + 1\\). For \\(n = 10\\), \\(T_{10} = 6(10) + 1 = 61\\)."
+  },
+  {
+    "id": "mth_117",
+    "course": "MTH 101",
+    "question": "Three numbers \\(x - 1,\\; x + 2,\\; 3x\\) are consecutive terms of an Arithmetic Progression (A.P.). Find the value of \\(x\\) and the common difference \\(d\\).",
+    "options": [
+      "\\(x = \\frac{5}{2},\\; d = 3\\)",
+      "\\(x = 2,\\; d = 3\\)",
+      "\\(x = \\frac{5}{2},\\; d = 2\\)",
+      "\\(x = 3,\\; d = 4\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "In an A.P., \\(2(x+2) = (x-1) + 3x \\Rightarrow 2x + 4 = 4x - 1 \\Rightarrow x = 5/2\\). Then \\(d = (x+2) - (x-1) = 3\\)."
+  },
+  {
+    "id": "mth_118",
+    "course": "MTH 101",
+    "question": "For what positive value of \\(x\\) do the three terms \\(x - 2,\\; x + 1,\\; x + 7\\) form a Geometric Progression (G.P.), and what is the common ratio \\(r\\)?",
+    "options": [
+      "\\(x = 3,\\; r = 2\\)",
+      "\\(x = 4,\\; r = \\frac{5}{2}\\)",
+      "\\(x = 5,\\; r = 3\\)",
+      "\\(x = 5,\\; r = 2\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Setting \\((x+1)^2 = (x-2)(x+7) \\Rightarrow x^2 + 2x + 1 = x^2 + 5x - 14 \\Rightarrow 3x = 15 \\Rightarrow x = 5\\). The terms are \\(3, 6, 12\\) so \\(r = 2\\)."
+  },
+  {
+    "id": "mth_119",
+    "course": "MTH 101",
+    "question": "In a Geometric Progression with positive terms, the \\(3\\text{rd}\\) term is \\(18\\) and the \\(6\\text{th}\\) term is \\(486\\). Find the first term \\(a\\) and common ratio \\(r\\).",
+    "options": [
+      "\\(a = 2,\\; r = 2\\)",
+      "\\(a = 2,\\; r = 3\\)",
+      "\\(a = 6,\\; r = 3\\)",
+      "\\(a = 3,\\; r = 2\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "\\(ar^5 / ar^2 = r^3 = 486 / 18 = 27 \\Rightarrow r = 3\\). Then \\(a(3^2) = 18 \\Rightarrow a = 2\\)."
+  },
+  {
+    "id": "mth_120",
+    "course": "MTH 101",
+    "question": "The sum to infinity of a convergent G.P. is \\(16\\), and the sum of its first two terms is \\(12\\). Given that the common ratio \\(r\\) is positive, find \\(a\\) and \\(r\\).",
+    "options": [
+      "\\(a = 12,\\; r = \\frac{1}{4}\\)",
+      "\\(a = 6,\\; r = \\frac{5}{8}\\)",
+      "\\(a = 8,\\; r = \\frac{1}{2}\\)",
+      "\\(a = 10,\\; r = \\frac{3}{8}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "\\(S_2 / S_\\infty = 1 - r^2 = 12/16 = 3/4 \\Rightarrow r^2 = 1/4 \\Rightarrow r = 1/2\\). Then \\(a = 16(1 - 1/2) = 8\\)."
+  },
+  {
+    "id": "mth_121",
+    "course": "MTH 101",
+    "question": "If the \\(p\\text{-th}\\) term of an A.P. is \\(q\\) and the \\(q\\text{-th}\\) term is \\(p\\) (where \\(p \\ne q\\)), what is the \\((p + q)\\text{-th}\\) term?",
+    "options": [
+      "\\(p + q\\)",
+      "\\(0\\)",
+      "\\(p - q\\)",
+      "\\(1\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Subtracting \\(a + (p-1)d = q\\) and \\(a + (q-1)d = p\\) gives \\(d = -1\\) and \\(a = p + q - 1\\). Thus \\(T_{p+q} = a + (p+q-1)(-1) = 0\\)."
+  },
+  {
+    "id": "mth_122",
+    "course": "MTH 101",
+    "question": "Evaluate the telescoping sum \\(S_n = \\sum_{k=1}^{20} \\frac{1}{k(k+1)} = \\frac{1}{1\\cdot 2} + \\frac{1}{2\\cdot 3} + \\dots + \\frac{1}{20\\cdot 21}\\).",
+    "options": [
+      "\\(\\frac{20}{21}\\)",
+      "\\(\\frac{19}{20}\\)",
+      "\\(\\frac{21}{22}\\)",
+      "\\(\\frac{1}{21}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Using partial fractions \\(\\frac{1}{k(k+1)} = \\frac{1}{k} - \\frac{1}{k+1}\\), the sum telescopes to \\(1 - \\frac{1}{21} = \\frac{20}{21}\\)."
+  },
+  {
+    "id": "mth_123",
+    "course": "MTH 101",
+    "question": "If \\(A\\) is the Arithmetic Mean and \\(G\\) is the Geometric Mean of two positive numbers \\(a\\) and \\(b\\), which inequality always holds?",
+    "options": [
+      "\\(A \\ge G\\)",
+      "\\(A^2 + G^2 = ab\\)",
+      "\\(A + G = ab\\)",
+      "\\(A < G\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Since \\((\\sqrt{a} - \\sqrt{b})^2 \\ge 0\\), \\(\\frac{a+b}{2} \\ge \\sqrt{ab}\\), which is the AM-GM inequality \\(A \\ge G\\)."
+  },
+  {
+    "id": "mth_124",
+    "course": "MTH 101",
+    "question": "Find two positive numbers whose Arithmetic Mean is \\(10\\) and whose Geometric Mean is \\(8\\).",
+    "options": [
+      "\\(18 \\text{ and } 2\\)",
+      "\\(14 \\text{ and } 6\\)",
+      "\\(12 \\text{ and } 8\\)",
+      "\\(16 \\text{ and } 4\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "We need \\(a + b = 20\\) and \\(ab = 64\\). Solving \\(t^2 - 20t + 64 = (t - 16)(t - 4) = 0\\) gives \\(16\\) and \\(4\\)."
+  },
+  {
+    "id": "mth_125",
+    "course": "MTH 101",
+    "question": "Evaluate the infinite series \\(3^{1/2} \\times 3^{1/4} \\times 3^{1/8} \\times 3^{1/16} \\times \\dots\\)",
+    "options": [
+      "\\(\\infty\\)",
+      "\\(\\sqrt{3}\\)",
+      "\\(3\\)",
+      "\\(9\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Adding the exponents gives a geometric series \\(1/2 + 1/4 + 1/8 + \\dots = \\frac{1/2}{1 - 1/2} = 1\\). Thus the product equals \\(3^1 = 3\\)."
+  },
+  {
+    "id": "mth_126",
+    "course": "MTH 101",
+    "question": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(2x^2 - 6x + 5 = 0\\), find the value of \\(\\alpha^2 + \\beta^2\\).",
+    "options": [
+      "\\(14\\)",
+      "\\(\\frac{13}{2}\\)",
+      "\\(9\\)",
+      "\\(4\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Here \\(\\alpha + \\beta = 3\\) and \\(\\alpha\\beta = 5/2\\). Thus \\(\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = 9 - 5 = 4\\)."
+  },
+  {
+    "id": "mth_127",
+    "course": "MTH 101",
+    "question": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(x^2 - 4x + 2 = 0\\), find the exact value of \\(\\alpha^3 + \\beta^3\\).",
+    "options": [
+      "\\(32\\)",
+      "\\(64\\)",
+      "\\(40\\)",
+      "\\(56\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Here \\(\\alpha + \\beta = 4\\) and \\(\\alpha\\beta = 2\\). Using \\(\\alpha^3 + \\beta^3 = (\\alpha+\\beta)^3 - 3\\alpha\\beta(\\alpha+\\beta) = 64 - 3(2)(4) = 40\\)."
+  },
+  {
+    "id": "mth_128",
+    "course": "MTH 101",
+    "question": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(3x^2 - 5x - 2 = 0\\), form the quadratic equation whose roots are \\(\\frac{1}{\\alpha}\\) and \\(\\frac{1}{\\beta}\\).",
+    "options": [
+      "\\(2x^2 + 5x - 3 = 0\\)",
+      "\\(x^2 - 5x + 6 = 0\\)",
+      "\\(2x^2 - 5x - 3 = 0\\)",
+      "\\(3x^2 + 5x - 2 = 0\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Replacing \\(x\\) with \\(1/x\\) in \\(3x^2 - 5x - 2 = 0\\) and multiplying by \\(-x^2\\) gives \\(2x^2 + 5x - 3 = 0\\)."
+  },
+  {
+    "id": "mth_129",
+    "course": "MTH 101",
+    "question": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(x^2 - 5x + 3 = 0\\), find the value of \\((\\alpha - \\beta)^2\\).",
+    "options": [
+      "\\(19\\)",
+      "\\(13\\)",
+      "\\(37\\)",
+      "\\(7\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "\\((\\alpha - \\beta)^2 = (\\alpha + \\beta)^2 - 4\\alpha\\beta = (-5)^2 - 4(3) = 25 - 12 = 13\\)."
+  },
+  {
+    "id": "mth_130",
+    "course": "MTH 101",
+    "question": "For what values of \\(k\\) does the quadratic equation \\(x^2 + 2(k + 1)x + 9k - 5 = 0\\) have equal (repeated) roots?",
+    "options": [
+      "\\(k = 1 \\text{ or } k = 5\\)",
+      "\\(k = 2 \\text{ or } k = 3\\)",
+      "\\(k = -1 \\text{ or } k = -6\\)",
+      "\\(k = 1 \\text{ or } k = 6\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Setting \\(\\Delta / 4 = (k+1)^2 - (9k - 5) = k^2 - 7k + 6 = (k-1)(k-6) = 0\\) gives \\(k = 1\\) or \\(k = 6\\)."
+  },
+  {
+    "id": "mth_131",
+    "course": "MTH 101",
+    "question": "For what range of values of \\(k\\) is the quadratic expression \\(x^2 - kx + 9\\) strictly positive for ALL real values of \\(x\\)?",
+    "options": [
+      "\\(-6 < k < 6\\)",
+      "\\(k > 6 \\text{ or } k < -6\\)",
+      "\\(0 < k < 6\\)",
+      "\\(k = \\pm 6\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Since the leading coefficient is \\(1 > 0\\), \\(x^2 - kx + 9 > 0\\) for all real \\(x\\) iff \\(\\Delta = k^2 - 36 < 0 \\Rightarrow -6 < k < 6\\)."
+  },
+  {
+    "id": "mth_132",
+    "course": "MTH 101",
+    "question": "If one root of the quadratic equation \\(2x^2 - kx + 16 = 0\\) is twice the other root (and \\(k > 0\\)), find the value of \\(k\\).",
+    "options": [
+      "\\(12\\)",
+      "\\(8\\)",
+      "\\(16\\)",
+      "\\(6\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Let the roots be \\(\\alpha\\) and \\(2\\alpha\\). Product \\(2\\alpha^2 = 16/2 = 8 \\Rightarrow \\alpha = 2\\) (for \\(k>0\\)). Sum \\(3\\alpha = 6 = k/2 \\Rightarrow k = 12\\)."
+  },
+  {
+    "id": "mth_133",
+    "course": "MTH 101",
+    "question": "When the polynomial \\(P(x) = 2x^3 + ax^2 - 5x + b\\) is divided by \\((x - 1)\\), the remainder is \\(0\\); when divided by \\((x + 2)\\), the remainder is \\(-6\\). Find \\((a, b)\\).",
+    "options": [
+      "\\(a = 1,\\; b = 2\\)",
+      "\\(a = 2,\\; b = 1\\)",
+      "\\(a = -2,\\; b = 5\\)",
+      "\\(a = -1,\\; b = 4\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "\\(P(1) = 2 + a - 5 + b = 0 \\Rightarrow a + b = 3\\). Also \\(P(-2) = -16 + 4a + 10 + b = -6 \\Rightarrow 4a + b = 0\\). Subtracting gives \\(3a = -3 \\Rightarrow a = -1, b = 4\\)."
+  },
+  {
+    "id": "mth_134",
+    "course": "MTH 101",
+    "question": "Find the remainder when the polynomial \\(P(x) = x^4 - 3x^3 + 2x^2 - x + 5\\) is divided by \\((x - 2)\\).",
+    "options": [
+      "\\(5\\)",
+      "\\(3\\)",
+      "\\(7\\)",
+      "\\(-1\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "By the Remainder Theorem, \\(R = P(2) = 16 - 3(8) + 2(4) - 2 + 5 = 16 - 24 + 8 - 2 + 5 = 3\\)."
+  },
+  {
+    "id": "mth_135",
+    "course": "MTH 101",
+    "question": "Decompose \\(\\frac{5x + 1}{(x - 1)(x + 2)}\\) into partial fractions.",
+    "options": [
+      "\\(\\frac{4}{x - 1} + \\frac{1}{x + 2}\\)",
+      "\\(\\frac{2}{x - 1} + \\frac{3}{x + 2}\\)",
+      "\\(\\frac{3}{x - 1} + \\frac{2}{x + 2}\\)",
+      "\\(\\frac{2}{x - 1} - \\frac{3}{x + 2}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Setting \\(5x + 1 = A(x+2) + B(x-1)\\): for \\(x=1\\), \\(3A = 6 \\Rightarrow A = 2\\); for \\(x=-2\\), \\(-3B = -9 \\Rightarrow B = 3\\)."
+  },
+  {
+    "id": "mth_136",
+    "course": "MTH 101",
+    "question": "Find the term independent of \\(x\\) (the constant term) in the binomial expansion of \\(\\left(2x^2 - \\frac{1}{x}\\right)^6\\).",
+    "options": [
+      "\\(240\\)",
+      "\\(-60\\)",
+      "\\(120\\)",
+      "\\(60\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "General term \\(T_{r+1} = \\binom{6}{r}(2x^2)^{6-r}(-x^{-1})^r = \\binom{6}{r}2^{6-r}(-1)^r x^{12-3r}\\). Setting \\(12 - 3r = 0 \\Rightarrow r = 4\\), giving \\(\\binom{6}{4}2^2(-1)^4 = 15 \\times 4 = 60\\)."
+  },
+  {
+    "id": "mth_137",
+    "course": "MTH 101",
+    "question": "Find the coefficient of \\(x^3\\) in the binomial expansion of \\((2 - 3x)^5\\).",
+    "options": [
+      "\\(720\\)",
+      "\\(-540\\)",
+      "\\(1080\\)",
+      "\\(-1080\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "The \\(x^3\\) term is \\(\\binom{5}{3}(2)^2(-3x)^3 = 10 \\times 4 \\times (-27)x^3 = -1080x^3\\)."
+  },
+  {
+    "id": "mth_138",
+    "course": "MTH 101",
+    "question": "Find the first three terms in the binomial expansion of \\((1 - 2x)^{-1/2}\\) in ascending powers of \\(x\\) for \\(|x| < 1/2\\).",
+    "options": [
+      "\\(1 + x + \\frac{1}{2}x^2\\)",
+      "\\(1 + 2x + 3x^2\\)",
+      "\\(1 + x + \\frac{3}{2}x^2\\)",
+      "\\(1 - x + \\frac{3}{2}x^2\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Using \\((1+u)^n = 1 + nu + \\frac{n(n-1)}{2!}u^2\\) with \\(n = -1/2, u = -2x\\): \\(1 + (-1/2)(-2x) + \\frac{(-1/2)(-3/2)}{2}(4x^2) = 1 + x + \\frac{3}{2}x^2\\)."
+  },
+  {
+    "id": "mth_139",
+    "course": "MTH 101",
+    "question": "For what range of values of \\(x\\) is the infinite binomial series expansion of \\((4 - 3x)^{-1/2}\\) valid (convergent)?",
+    "options": [
+      "\\(|x| < 4\\)",
+      "\\(|x| < \\frac{4}{3}\\)",
+      "\\(|x| < 1\\)",
+      "\\(|x| < \\frac{3}{4}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Writing \\(4^{-1/2}\\left(1 - \\frac{3}{4}x\\right)^{-1/2}\\), convergence requires \\(\\left|\\frac{3}{4}x\\right| < 1 \\Rightarrow |x| < \\frac{4}{3}\\)."
+  },
+  {
+    "id": "mth_140",
+    "course": "MTH 101",
+    "question": "Find the middle term in the binomial expansion of \\(\\left(x + \\frac{1}{x}\\right)^8\\).",
+    "options": [
+      "\\(56x^2\\)",
+      "\\(70x^2\\)",
+      "\\(28\\)",
+      "\\(70\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "With \\(n = 8\\) (9 terms), the middle term is the 5th term (\\(r = 4\\)): \\(\\binom{8}{4} x^4 (x^{-1})^4 = 70\\)."
+  },
+  {
+    "id": "mth_141",
+    "course": "MTH 101",
+    "question": "If \\(\\binom{n}{2} = 28\\) for a positive integer \\(n\\), find the value of \\(n\\).",
+    "options": [
+      "\\(14\\)",
+      "\\(8\\)",
+      "\\(9\\)",
+      "\\(7\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "\\(\\frac{n(n-1)}{2} = 28 \\Rightarrow n(n-1) = 56 = 8 \\times 7 \\Rightarrow n = 8\\)."
+  },
+  {
+    "id": "mth_142",
+    "course": "MTH 101",
+    "question": "What is the sum of all binomial coefficients \\(\\sum_{r=0}^n \\binom{n}{r} = \\binom{n}{0} + \\binom{n}{1} + \\dots + \\binom{n}{n}\\)?",
+    "options": [
+      "\\(2^{n-1}\\)",
+      "\\(2^n\\)",
+      "\\(n 2^n\\)",
+      "\\(n!\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Setting \\(x = 1\\) in \\((1 + x)^n = \\sum_{r=0}^n \\binom{n}{r}x^r\\) immediately yields \\(2^n\\)."
+  },
+  {
+    "id": "mth_143",
+    "course": "MTH 101",
+    "question": "Evaluate the alternating sum of binomial coefficients \\(\\binom{n}{0} - \\binom{n}{1} + \\binom{n}{2} - \\dots + (-1)^n \\binom{n}{n}\\) for \\(n \\ge 1\\).",
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2^{n-1}\\)",
+      "\\((-1)^n\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Setting \\(x = -1\\) in \\((1 + x)^n\\) gives \\((1 - 1)^n = 0\\)."
+  },
+  {
+    "id": "mth_144",
+    "course": "MTH 101",
+    "question": "Pascal's Identity for binomial coefficients states that \\(\\binom{n}{r} + \\binom{n}{r-1}\\) is equal to:",
+    "options": [
+      "\\(\\binom{n}{r+1}\\)",
+      "\\(\\binom{n+1}{r}\\)",
+      "\\(\\binom{2n}{2r-1}\\)",
+      "\\(\\binom{n+1}{r+1}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Adding \\(\\frac{n!}{r!(n-r)!} + \\frac{n!}{(r-1)!(n-r+1)!} = \\frac{(n+1)!}{r!(n+1-r)!} = \\binom{n+1}{r}\\)."
+  },
+  {
+    "id": "mth_145",
+    "course": "MTH 101",
+    "question": "In how many ways can a committee of \\(3\\) men and \\(2\\) women be chosen from \\(7\\) men and \\(5\\) women?",
+    "options": [
+      "\\(45\\)",
+      "\\(350\\)",
+      "\\(210\\)",
+      "\\(700\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "\\(\\binom{7}{3} \\times \\binom{5}{2} = 35 \\times 10 = 350\\)."
+  },
+  {
+    "id": "mth_146",
+    "course": "MTH 101",
+    "question": "Use De Moivre's Theorem to evaluate \\((1 + i)^8\\).",
+    "options": [
+      "\\(8 + 8i\\)",
+      "\\(16i\\)",
+      "\\(-16\\)",
+      "\\(16\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Writing \\(1 + i = \\sqrt{2}\\left(\\cos\\frac{\\pi}{4} + i\\sin\\frac{\\pi}{4}\\right)\\), we get \\((1+i)^8 = (\\sqrt{2})^8(\\cos 2\\pi + i\\sin 2\\pi) = 16(1 + 0i) = 16\\)."
+  },
+  {
+    "id": "mth_147",
+    "course": "MTH 101",
+    "question": "Use De Moivre's Theorem to simplify \\(\\left(\\frac{1 + i\\sqrt{3}}{2}\\right)^6\\).",
+    "options": [
+      "\\(i\\)",
+      "\\(\\frac{-1 + i\\sqrt{3}}{2}\\)",
+      "\\(-1\\)",
+      "\\(1\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Since \\(\\frac{1 + i\\sqrt{3}}{2} = \\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\), raising to the 6th power gives \\(\\cos 2\\pi + i\\sin 2\\pi = 1\\)."
+  },
+  {
+    "id": "mth_148",
+    "course": "MTH 101",
+    "question": "Find the two square roots of the complex number \\(z = 5 + 12i\\).",
+    "options": [
+      "\\(\\pm(2 + 3i)\\)",
+      "\\(\\pm(4 + 3i)\\)",
+      "\\(\\pm(3 + 2i)\\)",
+      "\\(\\pm(3 - 2i)\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Notice that \\((3 + 2i)^2 = 9 - 4 + 12i = 5 + 12i\\), so the square roots are \\(\\pm(3 + 2i)\\)."
+  },
+  {
+    "id": "mth_149",
+    "course": "MTH 101",
+    "question": "If \\(\\omega \\ne 1\\) is a complex cube root of unity (\\(\\omega^3 = 1\\)), evaluate \\((1 - \\omega + \\omega^2)(1 + \\omega - \\omega^2)\\).",
+    "options": [
+      "\\(4\\)",
+      "\\(-4\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Since \\(1 + \\omega + \\omega^2 = 0\\), we have \\(1 + \\omega^2 = -\\omega\\) and \\(1 + \\omega = -\\omega^2\\). Thus \\((-2\\omega)(-2\\omega^2) = 4\\omega^3 = 4\\)."
+  },
+  {
+    "id": "mth_150",
+    "course": "MTH 101",
+    "question": "In the Argand diagram, what geometric locus of points \\(z = x + iy\\) is represented by the equation \\(|z - 2i| = |z - 4|\\)?",
+    "options": [
+      "A straight line \\(x + 2y = 3\\)",
+      "A circle of radius \\(2\\) centred at \\((4, 2)\\)",
+      "An ellipse with foci at \\((0, 2)\\) and \\((4, 0)\\)",
+      "The perpendicular bisector of the line segment joining \\((0, 2)\\) and \\((4, 0)\\), i.e., \\(2x - y = 3\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Squaring \\(x^2 + (y-2)^2 = (x-4)^2 + y^2\\) simplifies to \\(-4y + 4 = -8x + 16 \\Rightarrow 2x - y = 3\\), the perpendicular bisector."
+  },
+  {
+    "id": "mth_151",
+    "course": "MTH 101",
+    "question": "In the Argand plane, what geometric shape is represented by \\(|z - (3 - 4i)| = 5\\)?",
+    "options": [
+      "A circle with centre \\((-3, 4)\\) and radius \\(5\\)",
+      "A circle with centre \\((3, -4)\\) and radius \\(5\\) passing through the origin",
+      "A straight line through \\((3, -4)\\)",
+      "A circle with centre \\((3, -4)\\) and radius \\(25\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "\\(|z - z_0| = R\\) is a circle centred at \\(z_0 = (3, -4)\\) with radius \\(R = 5\\). Since \\(|3 - 4i| = 5\\), it passes through the origin."
+  },
+  {
+    "id": "mth_152",
+    "course": "MTH 101",
+    "question": "Express \\(\\frac{3 + 4i}{1 - 2i}\\) in the standard form \\(a + bi\\).",
+    "options": [
+      "\\(-1 - 2i\\)",
+      "\\(1 + 2i\\)",
+      "\\(\\frac{11}{5} + \\frac{10}{5}i\\)",
+      "\\(-1 + 2i\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Multiply numerator and denominator by \\(1 + 2i\\): \\(\\frac{(3+4i)(1+2i)}{1^2 + 2^2} = \\frac{3 + 6i + 4i - 8}{5} = \\frac{-5 + 10i}{5} = -1 + 2i\\)."
+  },
+  {
+    "id": "mth_153",
+    "course": "MTH 101",
+    "question": "If \\(z = \\cos\\theta + i\\sin\\theta\\), what is \\(z^n + \\frac{1}{z^n}\\) equal to?",
+    "options": [
+      "\\(\\cos(n\\theta)\\)",
+      "\\(2\\sin(n\\theta)\\)",
+      "\\(2\\cos(n\\theta)\\)",
+      "\\(2i\\sin(n\\theta)\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "By De Moivre's Theorem, \\(z^n = \\cos(n\\theta) + i\\sin(n\\theta)\\) and \\(z^{-n} = \\cos(n\\theta) - i\\sin(n\\theta)\\), so their sum is \\(2\\cos(n\\theta)\\)."
+  },
+  {
+    "id": "mth_154",
+    "course": "MTH 101",
+    "question": "If \\(z = \\cos\\theta + i\\sin\\theta\\), what is \\(z^n - \\frac{1}{z^n}\\) equal to?",
+    "options": [
+      "\\(2i\\sin(n\\theta)\\)",
+      "\\(-2i\\cos(n\\theta)\\)",
+      "\\(2\\cos(n\\theta)\\)",
+      "\\(2\\sin(n\\theta)\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Subtracting \\(z^{-n} = \\cos(n\\theta) - i\\sin(n\\theta)\\) from \\(z^n = \\cos(n\\theta) + i\\sin(n\\theta)\\) gives \\(2i\\sin(n\\theta)\\)."
+  },
+  {
+    "id": "mth_155",
+    "course": "MTH 101",
+    "question": "Find the real values of \\(x\\) and \\(y\\) satisfying \\((x + iy)(2 - i) = 5\\).",
+    "options": [
+      "\\(x = 2,\\; y = -1\\)",
+      "\\(x = 2,\\; y = 1\\)",
+      "\\(x = 1,\\; y = 2\\)",
+      "\\(x = -2,\\; y = 1\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "\\(x + iy = \\frac{5}{2 - i} = \\frac{5(2 + i)}{4 + 1} = 2 + i\\), so \\(x = 2\\) and \\(y = 1\\)."
+  },
+  {
+    "id": "mth_156",
+    "course": "MTH 101",
+    "question": "If \\(\\tan A = \\frac{1}{2}\\) and \\(\\tan B = \\frac{1}{3}\\) where \\(A\\) and \\(B\\) are acute angles, find the exact value of \\(A + B\\).",
+    "options": [
+      "\\(\\frac{\\pi}{3}\\) (\\(60^\\circ\\))",
+      "\\(\\frac{\\pi}{4}\\) (\\(45^\\circ\\))",
+      "\\(\\frac{\\pi}{6}\\) (\\(30^\\circ\\))",
+      "\\(\\frac{\\pi}{2}\\) (\\(90^\\circ\\))"
+    ],
+    "answer_index": 1,
+    "explanation": "\\(\\tan(A+B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B} = \\frac{1/2 + 1/3}{1 - 1/6} = \\frac{5/6}{5/6} = 1 \\Rightarrow A + B = \\frac{\\pi}{4}\\)."
+  },
+  {
+    "id": "mth_157",
+    "course": "MTH 101",
+    "question": "What are the maximum and minimum values of the trigonometric expression \\(f(\\theta) = 3\\sin\\theta - 4\\cos\\theta + 2\\) for real \\(\\theta\\)?",
+    "options": [
+      "\\(\\text{Max} = 5,\\; \\text{Min} = -5\\)",
+      "\\(\\text{Max} = 6,\\; \\text{Min} = -2\\)",
+      "\\(\\text{Max} = 9,\\; \\text{Min} = -5\\)",
+      "\\(\\text{Max} = 7,\\; \\text{Min} = -3\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Since \\(R = \\sqrt{3^2 + (-4)^2} = 5\\), \\(3\\sin\\theta - 4\\cos\\theta\\) ranges between \\(-5\\) and \\(+5\\). Adding \\(2\\) gives \\([-3, 7]\\)."
+  },
+  {
+    "id": "mth_158",
+    "course": "MTH 101",
+    "question": "Using the half-angle substitution \\(t = \\tan(\\theta/2)\\), which expressions give \\(\\sin\\theta\\) and \\(\\cos\\theta\\)?",
+    "options": [
+      "\\(\\sin\\theta = \\frac{2t}{1 + t^2},\\; \\cos\\theta = \\frac{1 - t^2}{1 + t^2}\\)",
+      "\\(\\sin\\theta = \\frac{t}{1 + t^2},\\; \\cos\\theta = \\frac{1}{1 + t^2}\\)",
+      "\\(\\sin\\theta = \\frac{1 - t^2}{1 + t^2},\\; \\cos\\theta = \\frac{2t}{1 + t^2}\\)",
+      "\\(\\sin\\theta = \\frac{2t}{1 - t^2},\\; \\cos\\theta = \\frac{1 + t^2}{1 - t^2}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "The standard Weierstrass substitution \\(t = \\tan(\\theta/2)\\) gives \\(\\sin\\theta = \\frac{2t}{1+t^2}\\) and \\(\\cos\\theta = \\frac{1-t^2}{1+t^2}\\)."
+  },
+  {
+    "id": "mth_159",
+    "course": "MTH 101",
+    "question": "The triple-angle identity for \\(\\cos(3\\theta)\\) in terms of \\(\\cos\\theta\\) alone is:",
+    "options": [
+      "\\(3\\cos\\theta - 4\\cos^3\\theta\\)",
+      "\\(3\\cos^3\\theta - 4\\cos\\theta\\)",
+      "\\(4\\cos^3\\theta + 3\\cos\\theta\\)",
+      "\\(4\\cos^3\\theta - 3\\cos\\theta\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Expanding \\(\\cos(2\\theta + \\theta) = (2\\cos^2\\theta - 1)\\cos\\theta - (2\\sin\\theta\\cos\\theta)\\sin\\theta = 4\\cos^3\\theta - 3\\cos\\theta\\)."
+  },
+  {
+    "id": "mth_160",
+    "course": "MTH 101",
+    "question": "The triple-angle identity for \\(\\sin(3\\theta)\\) in terms of \\(\\sin\\theta\\) alone is:",
+    "options": [
+      "\\(3\\sin^3\\theta - 4\\sin\\theta\\)",
+      "\\(4\\sin^3\\theta - 3\\sin\\theta\\)",
+      "\\(3\\sin\\theta - 4\\sin^3\\theta\\)",
+      "\\(3\\sin\\theta + 4\\sin^3\\theta\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Expanding \\(\\sin(2\\theta + \\theta)\\) gives \\(\\sin(3\\theta) = 3\\sin\\theta - 4\\sin^3\\theta\\)."
+  },
+  {
+    "id": "mth_161",
+    "course": "MTH 101",
+    "question": "Simplify the trigonometric ratio \\(\\frac{\\sin 5\\theta + \\sin 3\\theta}{\\cos 5\\theta + \\cos 3\\theta}\\).",
+    "options": [
+      "\\(\\tan(8\\theta)\\)",
+      "\\(\\cot(4\\theta)\\)",
+      "\\(\\tan(\\theta)\\)",
+      "\\(\\tan(4\\theta)\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "By the factor formulas, \\(\\frac{2\\sin(4\\theta)\\cos(\\theta)}{2\\cos(4\\theta)\\cos(\\theta)} = \\tan(4\\theta)\\)."
+  },
+  {
+    "id": "mth_162",
+    "course": "MTH 101",
+    "question": "If \\(\\sin\\theta + \\cos\\theta = \\frac{7}{5}\\), find the value of \\(\\sin(2\\theta)\\).",
+    "options": [
+      "\\(\\frac{12}{25}\\)",
+      "\\(\\frac{49}{25}\\)",
+      "\\(\\frac{24}{25}\\)",
+      "\\(\\frac{7}{25}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Squaring both sides: \\(\\sin^2\\theta + \\cos^2\\theta + 2\\sin\\theta\\cos\\theta = \\frac{49}{25} \\Rightarrow 1 + \\sin(2\\theta) = \\frac{49}{25} \\Rightarrow \\sin(2\\theta) = \\frac{24}{25}\\)."
+  },
+  {
+    "id": "mth_163",
+    "course": "MTH 101",
+    "question": "Find all solutions to \\(2\\cos^2\\theta - 3\\cos\\theta + 1 = 0\\) in the interval \\(0 \\le \\theta \\le \\pi\\).",
+    "options": [
+      "\\(\\theta = \\frac{\\pi}{6},\\; \\frac{\\pi}{2}\\)",
+      "\\(\\theta = 0,\\; \\frac{\\pi}{3}\\)",
+      "\\(\\theta = 0,\\; \\frac{\\pi}{6}\\)",
+      "\\(\\theta = \\frac{\\pi}{3},\\; \\frac{2\\pi}{3}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Factoring \\((2\\cos\\theta - 1)(\\cos\\theta - 1) = 0\\) gives \\(\\cos\\theta = 1\\) (\\(\\theta = 0\\)) or \\(\\cos\\theta = 1/2\\) (\\(\\theta = \\pi/3\\))."
+  },
+  {
+    "id": "mth_164",
+    "course": "MTH 101",
+    "question": "A circular sector of radius \\(r = 6\\text{ cm}\\) has perimeter \\(20\\text{ cm}\\). Find the angle \\(\\theta\\) (in radians) subtended at the centre and the area of the sector.",
+    "options": [
+      "\\(\\theta = 2\\text{ rad},\\; \\text{Area} = 36\\text{ cm}^2\\)",
+      "\\(\\theta = \\frac{4}{3}\\text{ rad},\\; \\text{Area} = 48\\text{ cm}^2\\)",
+      "\\(\\theta = \\frac{5}{3}\\text{ rad},\\; \\text{Area} = 30\\text{ cm}^2\\)",
+      "\\(\\theta = \\frac{4}{3}\\text{ rad},\\; \\text{Area} = 24\\text{ cm}^2\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Perimeter \\(2r + r\\theta = 12 + 6\\theta = 20 \\Rightarrow \\theta = 4/3\\text{ rad}\\). Area \\(= \\frac{1}{2}r^2\\theta = \\frac{1}{2}(36)(4/3) = 24\\text{ cm}^2\\)."
+  },
+  {
+    "id": "mth_165",
+    "course": "MTH 101",
+    "question": "In a triangle \\(ABC\\) with sides \\(a = 5, b = 7, c = 8\\), find the angle \\(B\\) using the Law of Cosines.",
+    "options": [
+      "\\(60^\\circ\\)",
+      "\\(45^\\circ\\)",
+      "\\(120^\\circ\\)",
+      "\\(30^\\circ\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "By the Cosine Rule, \\(\\cos B = \\frac{a^2 + c^2 - b^2}{2ac} = \\frac{25 + 64 - 49}{2(5)(8)} = \\frac{40}{80} = \\frac{1}{2} \\Rightarrow B = 60^\\circ\\)."
+  },
+  {
+    "id": "mth_166",
+    "course": "MTH 101",
+    "question": "If \\(\\sec\\theta + \\tan\\theta = 3\\), what is the exact value of \\(\\sec\\theta\\)?",
+    "options": [
+      "\\(\\frac{10}{3}\\)",
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{3}{5}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Since \\(\\sec^2\\theta - \\tan^2\\theta = 1\\), \\(\\sec\\theta - \\tan\\theta = 1/3\\). Adding the two equations gives \\(2\\sec\\theta = 10/3 \\Rightarrow \\sec\\theta = 5/3\\)."
+  },
+  {
+    "id": "mth_167",
+    "course": "MTH 101",
+    "question": "Find the exact value of \\(\\cos(75^\\circ)\\) using \\(\\cos(45^\\circ + 30^\\circ)\\).",
+    "options": [
+      "\\(\\frac{\\sqrt{6} - \\sqrt{2}}{4}\\)",
+      "\\(\\frac{\\sqrt{3} - 1}{2}\\)",
+      "\\(\\frac{\\sqrt{6} + \\sqrt{2}}{4}\\)",
+      "\\(\\frac{\\sqrt{3} + 1}{2\\sqrt{2}}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "\\(\\cos(45^\\circ + 30^\\circ) = \\cos 45^\\circ\\cos 30^\\circ - \\sin 45^\\circ\\sin 30^\\circ = \\frac{\\sqrt{2}}{2}\\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{2}}{2}\\frac{1}{2} = \\frac{\\sqrt{6} - \\sqrt{2}}{4}\\)."
+  },
+  {
+    "id": "mth_168",
+    "course": "MTH 101",
+    "question": "If \\(\\log_2 x + \\log_4 x = 6\\), find the value of \\(x\\).",
+    "options": [
+      "\\(8\\)",
+      "\\(64\\)",
+      "\\(16\\)",
+      "\\(32\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Using change of base \\(\\log_4 x = \\frac{1}{2}\\log_2 x\\), we have \\(\\frac{3}{2}\\log_2 x = 6 \\Rightarrow \\log_2 x = 4 \\Rightarrow x = 2^4 = 16\\)."
+  },
+  {
+    "id": "mth_169",
+    "course": "MTH 101",
+    "question": "Solve the exponential equation \\(3^{2x} - 10(3^x) + 9 = 0\\).",
+    "options": [
+      "\\(x = 1 \\text{ or } x = 9\\)",
+      "\\(x = 0 \\text{ or } x = 3\\)",
+      "\\(x = 0 \\text{ or } x = 2\\)",
+      "\\(x = 1 \\text{ or } x = 2\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Let \\(u = 3^x\\): \\(u^2 - 10u + 9 = (u - 1)(u - 9) = 0 \\Rightarrow 3^x = 1\\) (\\(x = 0\\)) or \\(3^x = 9\\) (\\(x = 2\\))."
+  },
+  {
+    "id": "mth_170",
+    "course": "MTH 101",
+    "question": "In the binomial expansion of \\((1 + kx)^6\\), the coefficient of \\(x^3\\) is \\(160\\). Find the real value of \\(k\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(8\\)",
+      "\\(4\\)",
+      "\\(\\frac{8}{3}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "\\(\\binom{6}{3}k^3 = 20k^3 = 160 \\Rightarrow k^3 = 8 \\Rightarrow k = 2\\)."
+  },
+  {
+    "id": "mth_171",
+    "course": "MTH 101",
+    "question": "Find the sum of all integers between \\(100\\) and \\(400\\) (inclusive) that are divisible by \\(7\\).",
+    "options": [
+      "\\(10584\\)",
+      "\\(10437\\)",
+      "\\(11025\\)",
+      "\\(10836\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "First multiple is \\(a = 105\\), last is \\(l = 399\\). Number of terms \\(n = (399 - 105)/7 + 1 = 43\\). Sum \\(S_{43} = \\frac{43}{2}(105 + 399) = 43 \\times 252 = 10836\\)."
+  },
+  {
+    "id": "mth_172",
+    "course": "MTH 101",
+    "question": "If \\(z = \\frac{1 + i}{1 - i}\\), evaluate \\(z^{2026}\\).",
+    "options": [
+      "\\(i\\)",
+      "\\(1\\)",
+      "\\(-i\\)",
+      "\\(-1\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "First simplify \\(z = \\frac{(1+i)^2}{1+1} = \\frac{2i}{2} = i\\). Since \\(2026 = 4(506) + 2\\), \\(i^{2026} = i^2 = -1\\)."
+  },
+  {
+    "id": "mth_173",
+    "course": "MTH 101",
+    "question": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(x^2 + px + q = 0\\), express \\(\\frac{\\alpha}{\\beta} + \\frac{\\beta}{\\alpha}\\) in terms of \\(p\\) and \\(q\\).",
+    "options": [
+      "\\(\\frac{2q - p^2}{p}\\)",
+      "\\(\\frac{p^2 + 2q}{q}\\)",
+      "\\(\\frac{p^2 - 2q}{q}\\)",
+      "\\(\\frac{p^2 - q}{q}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "\\(\\frac{\\alpha^2 + \\beta^2}{\\alpha\\beta} = \\frac{(\\alpha+\\beta)^2 - 2\\alpha\\beta}{\\alpha\\beta} = \\frac{(-p)^2 - 2q}{q} = \\frac{p^2 - 2q}{q}\\)."
+  },
+  {
+    "id": "mth_174",
+    "course": "MTH 101",
+    "question": "Find the general solution of the trigonometric equation \\(\\cos\\theta = \\frac{1}{2}\\).",
+    "options": [
+      "\\(\\theta = n\\pi \\pm \\frac{\\pi}{3},\\; n \\in \\mathbb{Z}\\)",
+      "\\(\\theta = 2n\\pi \\pm \\frac{\\pi}{3},\\; n \\in \\mathbb{Z}\\)",
+      "\\(\\theta = 2n\\pi \\pm \\frac{\\pi}{6},\\; n \\in \\mathbb{Z}\\)",
+      "\\(\\theta = n\\pi + (-1)^n \\frac{\\pi}{3},\\; n \\in \\mathbb{Z}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "For \\(\\cos\\theta = \\cos\\alpha\\) with \\(\\alpha = \\pi/3\\), the general solution is \\(\\theta = 2n\\pi \\pm \\frac{\\pi}{3}\\)."
+  },
+  {
+    "id": "mth_175",
+    "course": "MTH 101",
+    "question": "Find the area of the minor segment cut off by a chord subtending an angle of \\(\\frac{\\pi}{3}\\) radians at the centre of a circle of radius \\(6\\text{ cm}\\).",
+    "options": [
+      "\\((12\\pi - 9\\sqrt{3})\\text{ cm}^2\\)",
+      "\\((6\\pi - 18)\\text{ cm}^2\\)",
+      "\\((6\\pi - 9\\sqrt{3})\\text{ cm}^2\\)",
+      "\\(6\\pi\\text{ cm}^2\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Area of segment \\(= \\frac{1}{2}r^2(\\theta - \\sin\\theta) = \\frac{1}{2}(36)\\left(\\frac{\\pi}{3} - \\frac{\\sqrt{3}}{2}\\right) = (6\\pi - 9\\sqrt{3})\\text{ cm}^2\\)."
+  },
+  {
+    "id": "mth_176",
+    "course": "MTH 101",
+    "question": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(x^2 - 3x + 5 = 0\\), form the quadratic equation whose roots are \\(\\alpha^2\\) and \\(\\beta^2\\).",
+    "options": [
+      "\\(x^2 - 9x + 25 = 0\\)",
+      "\\(x^2 + x + 25 = 0\\)",
+      "\\(x^2 - x + 25 = 0\\)",
+      "\\(x^2 + 11x + 25 = 0\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Here \\(\\alpha + \\beta = 3\\) and \\(\\alpha\\beta = 5\\). Then \\(\\alpha^2 + \\beta^2 = (\\alpha+\\beta)^2 - 2\\alpha\\beta = 9 - 10 = -1\\) and \\(\\alpha^2\\beta^2 = 25\\), giving \\(x^2 - (-1)x + 25 = x^2 + x + 25 = 0\\)."
+  },
+  {
+    "id": "mth_177",
+    "course": "MTH 101",
+    "question": "Find the coefficient of \\(x^4\\) in the expansion of \\((1 + x + x^2)(1 - x)^6\\).",
+    "options": [
+      "\\(6\\)",
+      "\\(15\\)",
+      "\\(-5\\)",
+      "\\(10\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "In \\((1 - x)^6\\), the coefficients of \\(x^4, x^3, x^2\\) are \\(\\binom{6}{4} = 15\\), \\(-\\binom{6}{3} = -20\\), and \\(\\binom{6}{2} = 15\\). Multiplying by \\((1 + x + x^2)\\) gives \\(15 - 20 + 15 = 10\\)."
+  },
+  {
+    "id": "mth_178",
+    "course": "MTH 101",
+    "question": "Using De Moivre's theorem, express \\(\\cos(4\\theta)\\) purely in terms of powers of \\(\\cos\\theta\\).",
+    "options": [
+      "\\(4\\cos^4\\theta - 4\\cos^2\\theta + 1\\)",
+      "\\(8\\cos^4\\theta - 4\\cos^2\\theta - 1\\)",
+      "\\(8\\cos^4\\theta + 8\\cos^2\\theta - 1\\)",
+      "\\(8\\cos^4\\theta - 8\\cos^2\\theta + 1\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "\\(\\cos(4\\theta) = 2\\cos^2(2\\theta) - 1 = 2(2\\cos^2\\theta - 1)^2 - 1 = 8\\cos^4\\theta - 8\\cos^2\\theta + 1\\)."
+  },
+  {
+    "id": "mth_179",
+    "course": "MTH 101",
+    "question": "Solve for \\(x\\) in the logarithmic equation \\(\\log_3(x - 1) + \\log_3(x + 1) = 1\\).",
+    "options": [
+      "\\(x = 4\\)",
+      "\\(x = \\sqrt{10}\\)",
+      "\\(x = \\pm 2\\)",
+      "\\(x = 2\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "\\(\\log_3(x^2 - 1) = 1 \\Rightarrow x^2 - 1 = 3 \\Rightarrow x^2 = 4\\). Since \\(x - 1 > 0\\), only \\(x = 2\\) is valid."
+  },
+  {
+    "id": "mth_180",
+    "course": "MTH 101",
+    "question": "What is the coefficient of \\(x^{-2}\\) in the binomial expansion of \\(\\left(x - \\frac{2}{x}\\right)^6\\)?",
+    "options": [
+      "\\(-240\\)",
+      "\\(60\\)",
+      "\\(240\\)",
+      "\\(-160\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "General term \\(\\binom{6}{r}x^{6-r}(-2)^r x^{-r} = \\binom{6}{r}(-2)^r x^{6-2r}\\). Setting \\(6 - 2r = -2 \\Rightarrow r = 4\\), giving \\(\\binom{6}{4}(-2)^4 = 15 \\times 16 = 240\\)."
+  },
+  {
+    "id": "mth_181",
+    "course": "MTH 101",
+    "question": "If \\(\\sin A = \\frac{3}{5}\\) (with \\(A\\) obtuse, in Quadrant II) and \\(\\cos B = \\frac{12}{13}\\) (with \\(B\\) acute, in Quadrant I), find the exact value of \\(\\sin(A + B)\\).",
+    "options": [
+      "\\(\\frac{56}{65}\\)",
+      "\\(\\frac{16}{65}\\)",
+      "\\(-\\frac{16}{65}\\)",
+      "\\(-\\frac{56}{65}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Since \\(A\\) is obtuse, \\(\\cos A = -4/5\\); since \\(B\\) is acute, \\(\\sin B = 5/13\\). Thus \\(\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B = \\frac{3}{5}\\frac{12}{13} + \\left(-\\frac{4}{5}\\right)\\frac{5}{13} = \\frac{36 - 20}{65} = \\frac{16}{65}\\)."
+  },
+  {
+    "id": "mth_182",
+    "course": "MTH 101",
+    "question": "In an Arithmetic Progression, the sum of the first \\(n\\) terms is \\(210\\) and the sum of the first \\((n - 1)\\) terms is \\(171\\). What is the \\(n\\text{-th}\\) term \\(T_n\\)?",
+    "options": [
+      "\\(31\\)",
+      "\\(39\\)",
+      "\\(29\\)",
+      "\\(41\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "For any series, \\(T_n = S_n - S_{n-1} = 210 - 171 = 39\\)."
+  },
+  {
+    "id": "mth_183",
+    "course": "MTH 101",
+    "question": "If the roots of the quadratic equation \\(x^2 - px + q = 0\\) differ by \\(1\\), which relation holds between \\(p\\) and \\(q\\)?",
+    "options": [
+      "\\(p^2 + 4q = 1\\)",
+      "\\(p = q + 1\\)",
+      "\\(p^2 = 4q\\)",
+      "\\(p^2 - 4q = 1\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Since \\((\\alpha - \\beta)^2 = (\\alpha + \\beta)^2 - 4\\alpha\\beta\\), setting \\(|\\alpha - \\beta| = 1\\) gives \\(p^2 - 4q = 1\\)."
+  },
+  {
+    "id": "mth_184",
+    "course": "MTH 101",
+    "question": "Find the modulus \\(|z|\\) of the complex number \\(z = \\frac{(3 + 4i)(1 - i)}{2 + 2i}\\).",
+    "options": [
+      "\\(\\frac{25}{4}\\)",
+      "\\(5\\)",
+      "\\(\\frac{5}{2}\\)",
+      "\\(\\frac{5}{\\sqrt{2}}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Using \\(|z_1 z_2 / z_3| = |z_1||z_2| / |z_3|\\): \\(|3+4i| = 5\\), \\(|1-i| = \\sqrt{2}\\), and \\(|2+2i| = 2\\sqrt{2}\\). Thus \\(|z| = \\frac{5\\sqrt{2}}{2\\sqrt{2}} = \\frac{5}{2}\\)."
+  },
+  {
+    "id": "mth_185",
+    "course": "MTH 101",
+    "question": "What is the principal argument \\(\\text{Arg}(z)\\) of the complex number \\(z = -\\sqrt{3} + i\\)?",
+    "options": [
+      "\\(-\\frac{5\\pi}{6}\\)",
+      "\\(\\frac{5\\pi}{6}\\)",
+      "\\(\\frac{\\pi}{6}\\)",
+      "\\(\\frac{2\\pi}{3}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "In Quadrant II (\\(x < 0, y > 0\\)), \\(\\tan\\alpha = |1 / (-\\sqrt{3})| = 1/\\sqrt{3} \\Rightarrow \\alpha = \\pi/6\\), so \\(\\theta = \\pi - \\pi/6 = 5\\pi/6\\)."
+  },
+  {
+    "id": "mth_186",
+    "course": "MTH 101",
+    "question": "Solve the equation \\(z^3 + 8 = 0\\) completely in the set of complex numbers.",
+    "options": [
+      "\\(z = -2,\\; 1 + i\\sqrt{3},\\; 1 - i\\sqrt{3}\\)",
+      "\\(z = -2,\\; 2i,\\; -2i\\)",
+      "\\(z = -2,\\; -1 + i\\sqrt{3},\\; -1 - i\\sqrt{3}\\)",
+      "\\(z = 2,\\; -1 + i\\sqrt{3},\\; -1 - i\\sqrt{3}\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Factoring \\(z^3 + 8 = (z + 2)(z^2 - 2z + 4) = 0\\) gives \\(z = -2\\) and \\(z = \\frac{2 \\pm \\sqrt{-12}}{2} = 1 \\pm i\\sqrt{3}\\)."
+  },
+  {
+    "id": "mth_187",
+    "course": "MTH 101",
+    "question": "Find the sum to infinity of the series \\(1 - \\frac{1}{3} + \\frac{1}{9} - \\frac{1}{27} + \\dots\\)",
+    "options": [
+      "\\(\\frac{4}{3}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{3}{2}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "This is a geometric series with \\(a = 1\\) and \\(r = -1/3\\). Thus \\(S_\\infty = \\frac{1}{1 - (-1/3)} = \\frac{1}{4/3} = \\frac{3}{4}\\)."
+  },
+  {
+    "id": "mth_188",
+    "course": "MTH 101",
+    "question": "If \\(A\\) and \\(B\\) are finite sets with \\(n(A) = 24, n(B) = 18,\\) and \\(n(A \\setminus B) = 15\\), find \\(n(A \\cup B)\\).",
+    "options": [
+      "\\(9\\)",
+      "\\(27\\)",
+      "\\(33\\)",
+      "\\(42\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Since \\(n(A \\cup B) = n(A \\setminus B) + n(B)\\), we have \\(n(A \\cup B) = 15 + 18 = 33\\)."
+  },
+  {
+    "id": "mth_189",
+    "course": "MTH 101",
+    "question": "Evaluate the exact value of \\(\\tan(15^\\circ)\\).",
+    "options": [
+      "\\(\\sqrt{3} - 1\\)",
+      "\\(2 - \\sqrt{3}\\)",
+      "\\(2 + \\sqrt{3}\\)",
+      "\\(\\frac{\\sqrt{3} - 1}{2}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "\\(\\tan(45^\\circ - 30^\\circ) = \\frac{1 - 1/\\sqrt{3}}{1 + 1/\\sqrt{3}} = \\frac{\\sqrt{3} - 1}{\\sqrt{3} + 1} = \\frac{(\\sqrt{3}-1)^2}{2} = 2 - \\sqrt{3}\\)."
+  },
+  {
+    "id": "mth_190",
+    "course": "MTH 101",
+    "question": "If \\(f(x) = \\frac{2x + 1}{x - 3}\\) for \\(x \\ne 3\\), find the inverse function \\(f^{-1}(x)\\).",
+    "options": [
+      "\\(f^{-1}(x) = \\frac{x - 3}{2x + 1}\\)",
+      "\\(f^{-1}(x) = \\frac{3x + 1}{x - 2}\\) (\\(x \\ne 2\\))",
+      "\\(f^{-1}(x) = \\frac{2x - 1}{x + 3}\\)",
+      "\\(f^{-1}(x) = \\frac{3x - 1}{x + 2}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Setting \\(y = \\frac{2x+1}{x-3} \\Rightarrow yx - 3y = 2x + 1 \\Rightarrow x(y - 2) = 3y + 1 \\Rightarrow x = \\frac{3y+1}{y-2}\\)."
+  },
+  {
+    "id": "mth_191",
+    "course": "MTH 101",
+    "question": "For what value of \\(c\\) is \\((x + 2)\\) a factor of the polynomial \\(P(x) = x^3 - 3x^2 + cx + 12\\)?",
+    "options": [
+      "\\(c = -4\\)",
+      "\\(c = 6\\)",
+      "\\(c = -10\\)",
+      "\\(c = 4\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "By the Factor Theorem, \\(P(-2) = (-2)^3 - 3(-2)^2 + c(-2) + 12 = -8 - 12 - 2c + 12 = 0 \\Rightarrow -2c = 8 \\Rightarrow c = -4\\)."
+  },
+  {
+    "id": "mth_192",
+    "course": "MTH 101",
+    "question": "If \\(\\sin\\theta - \\cos\\theta = \\frac{1}{3}\\), find the value of \\(\\sin^3\\theta - \\cos^3\\theta\\).",
+    "options": [
+      "\\(\\frac{1}{27}\\)",
+      "\\(\\frac{19}{27}\\)",
+      "\\(\\frac{11}{27}\\)",
+      "\\(\\frac{13}{27}\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Squaring gives \\(1 - 2\\sin\\theta\\cos\\theta = 1/9 \\Rightarrow \\sin\\theta\\cos\\theta = 4/9\\). Then \\(\\sin^3\\theta - \\cos^3\\theta = (\\sin\\theta - \\cos\\theta)(1 + \\sin\\theta\\cos\\theta) = \\frac{1}{3}\\left(1 + \\frac{4}{9}\\right) = \\frac{13}{27}\\)."
+  },
+  {
+    "id": "mth_193",
+    "course": "MTH 101",
+    "question": "Find the sum of the first \\(n\\) odd natural numbers: \\(1 + 3 + 5 + \\dots + (2n - 1)\\).",
+    "options": [
+      "\\(n(n+1)\\)",
+      "\\(n^2\\)",
+      "\\(2n^2 - 1\\)",
+      "\\(\\frac{n(2n+1)}{2}\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Using \\(S_n = \\frac{n}{2}(a + l) = \\frac{n}{2}(1 + 2n - 1) = n^2\\)."
+  },
+  {
+    "id": "mth_194",
+    "course": "MTH 101",
+    "question": "What is the coefficient of \\(x^2\\) in the Maclaurin/binomial series expansion of \\((1 - 3x)^{-2}\\) for \\(|x| < 1/3\\)?",
+    "options": [
+      "\\(9\\)",
+      "\\(27\\)",
+      "\\(18\\)",
+      "\\(-27\\)"
+    ],
+    "answer_index": 1,
+    "explanation": "Using \\((1 - u)^{-2} = 1 + 2u + 3u^2 + 4u^3 + \\dots\\) with \\(u = 3x\\), the \\(x^2\\) term is \\(3(3x)^2 = 27x^2\\)."
+  },
+  {
+    "id": "mth_195",
+    "course": "MTH 101",
+    "question": "How many 4-digit numbers can be formed from the digits \\(\\{1, 2, 3, 4, 5, 6\\}\\) if NO digit may be repeated?",
+    "options": [
+      "\\(1296\\)",
+      "\\(720\\)",
+      "\\(360\\)",
+      "\\(15\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "The number of permutations of 6 distinct digits taken 4 at a time is \\(^6P_4 = 6 \\times 5 \\times 4 \\times 3 = 360\\)."
+  },
+  {
+    "id": "mth_196",
+    "course": "MTH 101",
+    "question": "Simplify the trigonometric expression \\(\\frac{1 - \\cos(2\\theta)}{\\sin(2\\theta)}\\).",
+    "options": [
+      "\\(\\cot\\theta\\)",
+      "\\(\\sin\\theta\\)",
+      "\\(\\tan\\theta\\)",
+      "\\(\\tan(2\\theta)\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "Using \\(1 - \\cos(2\\theta) = 2\\sin^2\\theta\\) and \\(\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta\\), the ratio simplifies to \\(\\frac{2\\sin^2\\theta}{2\\sin\\theta\\cos\\theta} = \\tan\\theta\\)."
+  },
+  {
+    "id": "mth_197",
+    "course": "MTH 101",
+    "question": "If the complex number \\(z\\) satisfies \\(|z| = 1\\) and \\(z \\ne -1\\), then the complex number \\(\\frac{z - 1}{z + 1}\\) is always:",
+    "options": [
+      "Of modulus \\(1\\)",
+      "Equal to \\(1\\)",
+      "Purely real",
+      "Purely imaginary (its real part is zero)"
+    ],
+    "answer_index": 3,
+    "explanation": "Let \\(z = \\cos\\theta + i\\sin\\theta\\); then \\(\\frac{z-1}{z+1} = i\\tan(\\theta/2)\\), which is purely imaginary."
+  },
+  {
+    "id": "mth_198",
+    "course": "MTH 101",
+    "question": "Find the set of real values of \\(x\\) for which \\(x^2 - 7x + 10 < 0\\).",
+    "options": [
+      "\\(2 \\le x \\le 5\\)",
+      "\\(x < 2 \\text{ or } x > 5\\)",
+      "\\(-5 < x < -2\\)",
+      "\\(2 < x < 5\\)"
+    ],
+    "answer_index": 3,
+    "explanation": "Factoring \\((x - 2)(x - 5) < 0\\) shows the product is negative strictly between the roots \\(2\\) and \\(5\\)."
+  },
+  {
+    "id": "mth_199",
+    "course": "MTH 101",
+    "question": "In a Geometric Progression, the product of the first three terms is \\(216\\), and their sum is \\(21\\). Find the three terms.",
+    "options": [
+      "\\(3,\\; 6,\\; 12\\)",
+      "\\(2,\\; 6,\\; 18\\)",
+      "\\(1,\\; 6,\\; 14\\)",
+      "\\(4,\\; 6,\\; 9\\)"
+    ],
+    "answer_index": 0,
+    "explanation": "Let the terms be \\(a/r, a, ar\\). Their product is \\(a^3 = 216 \\Rightarrow a = 6\\). Since \\(3 + 6 + 12 = 21\\) and \\(3 \\times 6 \\times 12 = 216\\), the terms are \\(3, 6, 12\\)."
+  },
+  {
+    "id": "mth_200",
+    "course": "MTH 101",
+    "question": "If \\(A = \\{x \\in \\mathbb{R} : x^2 - 4 = 0\\}\\) and \\(B = \\{x \\in \\mathbb{R} : x^2 - 5x + 6 = 0\\}\\), find the Cartesian product cardinality \\(n(A \\times B)\\) and \\(A \\cup B\\).",
+    "options": [
+      "\\(n(A \\times B) = 4,\\quad A \\cup B = \\{2\\}\\)",
+      "\\(n(A \\times B) = 3,\\quad A \\cup B = \\{-2, 2, 3\\}\\)",
+      "\\(n(A \\times B) = 4,\\quad A \\cup B = \\{-2, 2, 3\\}\\)",
+      "\\(n(A \\times B) = 2,\\quad A \\cup B = \\{-2, 3\\}\\)"
+    ],
+    "answer_index": 2,
+    "explanation": "\\(A = \\{-2, 2\\}\\) and \\(B = \\{2, 3\\}\\). Thus \\(n(A \\times B) = 2 \\times 2 = 4\\) and \\(A \\cup B = \\{-2, 2, 3\\}\\)."
+  }
+]

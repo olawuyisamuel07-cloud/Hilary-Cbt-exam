@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Examination Completed | {{ student_full_name }}{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex flex-col justify-between bg-gradient-to-br from-slate-900 via-teal-950 to-slate-900 text-white p-6">
+    <!-- Top Branding -->
+    <header class="max-w-4xl w-full mx-auto flex items-center justify-between pt-2">
+        <span class="text-xs font-extrabold uppercase tracking-[0.2em] text-amber-300">BY {{ powered_by_name }}</span>
+        <span class="text-xs font-mono text-slate-300">Matric: {{ attempt.matric_number }}</span>
+    </header>
+
+    <!-- Center Card: "Click to See Your Result" -->
+    <main class="max-w-xl w-full mx-auto my-auto text-center bg-white text-slate-900 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+        <div class="mx-auto w-20 h-20 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shadow-inner">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+            </svg>
+        </div>
+
+        <div class="space-y-2">
+            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-teal-700">All 4 Courses Submitted</p>
+            <h1 class="font-display text-3xl sm:text-4xl font-bold text-slate-900">
+                Well Done, {{ student_first_name }}!
+            </h1>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                You have completed <strong class="text-slate-900">CHM 101, PHY 101, MTH 101, and BIO 101</strong> (140 questions).
+                Your First Semester CGPA and detailed explanations are ready.
+            </p>
+        </div>
+
+        <div class="pt-2">
+            <a
+                href="/result/{{ attempt.id }}"
+                class="w-full inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-extrabold text-lg shadow-xl shadow-emerald-900/25 transform hover:-translate-y-0.5 transition"
+            >
+                <span>Click to See Your Result</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                </svg>
+            </a>
+        </div>
+    </main>
+
+    <footer class="text-center text-xs text-slate-400 pb-2">
+        Powered <strong class="text-amber-300">BY {{ powered_by_name }}</strong>
+    </footer>
+</div>
+{% endblock %}

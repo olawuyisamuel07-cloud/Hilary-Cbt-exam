@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+{% block title %}Welcome {{ student_first_name }} | 100 Level First Semester Preparatory Exam — BY {{ powered_by_name }}{% endblock %}
+
+{% block content %}
+<div class="relative min-h-screen flex flex-col justify-between overflow-hidden bg-gradient-to-br from-amber-50 via-stone-50 to-teal-50/70">
+    <!-- Subtle warm decorative background shapes -->
+    <div class="pointer-events-none absolute -top-24 -left-24 w-96 h-96 rounded-full bg-amber-200/30 blur-3xl"></div>
+    <div class="pointer-events-none absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-teal-200/30 blur-3xl"></div>
+
+    <!-- Top Navigation & Fashionable "BY SAMUELL" Branding -->
+    <header class="relative z-10 max-w-6xl w-full mx-auto px-6 pt-6 pb-4 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-3.5">
+            {% if has_custom_logo %}
+                <img src="/static/images/{{ logo_filename }}" alt="{{ powered_by_name }} Logo" class="h-12 w-12 rounded-xl object-cover shadow-md border border-amber-300/60" />
+            {% else %}
+                <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-amber-300 flex items-center justify-center shadow-md border border-amber-400/40 font-display font-bold text-xl tracking-wider">
+                    S
+                </div>
+            {% endif %}
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-[11px] uppercase tracking-[0.25em] text-amber-800 font-bold">Powered By</span>
+                    <span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                </div>
+                <p class="text-base font-extrabold tracking-[0.16em] text-slate-900 uppercase">BY {{ powered_by_name }}</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <a href="/history" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/85 hover:bg-white text-slate-800 text-sm font-semibold shadow-sm border border-stone-200/80 transition">
+                <svg class="w-4 h-4 text-teal-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Past Attempts
+                {% if past_attempts_count > 0 %}
+                <span class="px-2 py-0.5 text-xs rounded-full bg-teal-100 text-teal-800 font-bold">{{ past_attempts_count }}</span>
+                {% endif %}
+            </a>
+            <a href="/login" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold shadow-md transition">
+                Candidate Login
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="relative z-10 max-w-6xl w-full mx-auto px-6 py-8 my-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-10 shadow-xl border border-stone-200/80">
+            
+            <!-- Left Column: Warm Greeting & Exam Info -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/90 border border-amber-300/60 text-amber-900 text-xs font-bold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span>
+                    1st Semester University Readiness Portal
+                </div>
+
+                <div class="space-y-2">
+                    <h1 class="font-display text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">
+                        Welcome, <span class="text-teal-800 underline decoration-amber-400/80 decoration-wavy underline-offset-8">{{ student_first_name }}</span>
+                    </h1>
+                    <p class="text-lg font-semibold text-slate-700">
+                        Candidate: <span class="text-slate-900">{{ student_full_name }}</span>
+                    </p>
+                </div>
+
+                <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
+                    We are about to embark on your <strong class="text-slate-800">100 Level First Semester Preparatory Exam</strong>.
+                    Take a deep breath, stay calm, and trust your preparation. Your family is rooting for your First Class success!
+                    Hope you are ready?
+                </p>
+
+                <!-- 4 Courses Overview Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+                    {% for c in courses_config %}
+                    <div class="rounded-2xl bg-stone-50 border border-stone-200/90 p-3.5 hover:border-teal-500/50 transition">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-xs font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-white">{{ c.display_code }}</span>
+                            <span class="text-xs font-bold text-teal-800">{{ c.credit_units }} Units</span>
+                        </div>
+                        <p class="text-xs text-slate-600 font-medium truncate" title="{{ c.title }}">{{ c.title }}</p>
+                        <div class="mt-2 pt-2 border-t border-stone-200 flex items-center justify-between text-xs font-bold text-slate-800">
+                            <span>{{ c.questions_count }} Qs</span>
+                            <span class="text-amber-700">{{ c.duration_minutes }} Mins</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Key Rules Banner -->
+                <div class="rounded-2xl bg-teal-950 text-teal-50 p-4 sm:p-5 space-y-2 shadow-inner">
+                    <div class="flex items-center gap-2 text-amber-300 font-bold text-xs uppercase tracking-wider">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        How Your Exam Works (140 Questions • 85 Minutes Total)
+                    </div>
+                    <ul class="text-xs sm:text-sm text-teal-100/90 space-y-1 list-disc list-inside">
+                        <li>Each course has its own individual timer (<strong class="text-white">20 mins</strong> for CHM, PHY, BIO; <strong class="text-white">25 mins</strong> for MTH 101).</li>
+                        <li>Within a course, you can skip questions, flag them, and review or change any answer before submitting.</li>
+                        <li>Once you submit a course (or its timer hits 00:00), it locks and moves to the next course.</li>
+                    </ul>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="pt-2 flex flex-wrap items-center gap-4">
+                    <a href="/login" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-teal-700 to-emerald-700 hover:from-teal-800 hover:to-emerald-800 text-white font-bold text-base sm:text-lg shadow-lg shadow-teal-900/20 transform hover:-translate-y-0.5 transition">
+                        <span>Start the Exam</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                    <a href="/history" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-stone-100 hover:bg-stone-200 text-slate-800 font-semibold text-sm sm:text-base transition">
+                        View Saved Progress ({{ past_attempts_count }})
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Family / Warm Inspiration Portrait Frame -->
+            <div class="lg:col-span-5">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-amber-100 via-orange-50 to-teal-100 aspect-[4/5] flex flex-col justify-between p-6">
+                    {% if has_custom_bg %}
+                        <img src="/static/images/{{ bg_filename }}" alt="Welcome Hillary Family Photo" class="absolute inset-0 w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/25 to-transparent"></div>
+                    {% else %}
+                        <!-- Warm artistic family & academic crest illustration when no photo is placed yet -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/15 via-rose-500/10 to-teal-700/20"></div>
+                        <div class="relative z-10 my-auto text-center px-4 space-y-4">
+                            <div class="mx-auto w-24 h-24 rounded-full bg-white/90 shadow-lg border-2 border-amber-300 flex items-center justify-center">
+                                <svg class="w-12 h-12 text-amber-600" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
+                                </svg>
+                            </div>
+                            <div class="space-y-1">
+                                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-amber-900">Family Pride & Excellence</p>
+                                <h2 class="font-display text-2xl font-bold text-slate-900">{{ student_full_name }}</h2>
+                                <p class="text-sm text-slate-700 leading-relaxed italic font-medium">
+                                    "I can do all things through Christ who strengthens me." <span class="not-italic font-bold text-slate-900">(Philippians 4:13, NKJV)</span>
+                                </p>
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    <!-- Top Badge on Photo Frame -->
+                    <div class="relative z-10 flex items-center justify-between">
+                        <span class="px-3 py-1 rounded-full bg-white/90 backdrop-blur text-slate-900 text-xs font-bold shadow">
+                            Target: 5.00 First Class
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-slate-900/85 backdrop-blur text-amber-300 text-xs font-bold tracking-wider uppercase">
+                            BY {{ powered_by_name }}
+                        </span>
+                    </div>
+
+                    <!-- Bottom Caption on Photo Frame -->
+                    <div class="relative z-10 rounded-2xl bg-slate-900/90 backdrop-blur-md p-4 text-white border border-white/15">
+                        <p class="text-xs uppercase tracking-widest text-amber-300 font-bold mb-0.5">Candidate Spotlight</p>
+                        <p class="font-bold text-base">{{ student_full_name }}</p>
+                        <p class="text-xs text-slate-300 mt-0.5">CHM 101 • PHY 101 • MTH 101 • BIO 101</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Fashionable Footer -->
+    <footer class="relative z-10 max-w-6xl w-full mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500 border-t border-stone-200/70">
+        <p>University 100-Level First Semester CBT Examination Portal • Custom-built for <strong class="text-slate-700">{{ student_full_name }}</strong></p>
+        <p class="font-bold tracking-widest uppercase text-slate-700">Fashioned &amp; Powered BY <span class="text-amber-700">{{ powered_by_name }}</span></p>
+    </footer>
+</div>
+{% endblock %}

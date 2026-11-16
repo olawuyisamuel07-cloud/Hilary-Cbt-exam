@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}Saved Attempts & Progress | {{ student_full_name }} — BY {{ powered_by_name }}{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex flex-col justify-between bg-stone-50">
+    <!-- Top Header -->
+    <header class="bg-slate-900 text-white px-6 py-5 shadow-md">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <div>
+                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-amber-300">BY {{ powered_by_name }} • Progress Tracker</p>
+                <h1 class="font-display text-2xl sm:text-3xl font-bold">{{ student_full_name }}'s Past Exam Attempts</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="/" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs sm:text-sm font-bold transition">
+                    ← Welcome Page
+                </a>
+                <a href="/login" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs sm:text-sm font-extrabold transition">
+                    Start New Attempt
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main History Table -->
+    <main class="max-w-6xl w-full mx-auto px-6 py-10 my-auto space-y-6">
+        {% if not history_rows %}
+        <div class="bg-white rounded-3xl border border-stone-200 p-12 text-center space-y-4 shadow-xs">
+            <h2 class="font-display text-2xl font-bold text-slate-800">No Completed Exam Attempts Yet</h2>
+            <p class="text-sm text-slate-500 max-w-md mx-auto">
+                Once {{ student_first_name }} completes her first 4-course CBT simulation, her scores, CGPA, and question reviews will be permanently saved here.
+            </p>
+            <a href="/login" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 text-white font-bold text-sm">
+                Take First Mock Exam →
+            </a>
+        </div>
+        {% else %}
+        <div class="bg-white rounded-3xl shadow-md border border-stone-200 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-stone-200 text-[11px] font-extrabold uppercase tracking-wider text-slate-500 bg-stone-50">
+                            <th class="py-4 px-5">Attempt</th>
+                            <th class="py-4 px-4">Matric No.</th>
+                            <th class="py-4 px-4 text-center">CHM 101</th>
+                            <th class="py-4 px-4 text-center">PHY 101</th>
+                            <th class="py-4 px-4 text-center">MTH 101</th>
+                            <th class="py-4 px-4 text-center">BIO 101</th>
+                            <th class="py-4 px-4 text-center">Total (/140)</th>
+                            <th class="py-4 px-4 text-center">CGPA (5.0)</th>
+                            <th class="py-4 px-5 text-right">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-stone-200 text-sm font-semibold text-slate-800">
+                        {% for row in history_rows %}
+                        <tr class="hover:bg-stone-50 transition">
+                            <td class="py-4 px-5">
+                                <span class="font-extrabold text-slate-900">#{{ row.attempt_number }}</span>
+                                <span class="block text-xs text-slate-400">
+                                    {{ row.completed_at.strftime('%d %b %Y, %H:%M') if row.completed_at else '' }}
+                                </span>
+                            </td>
+                            <td class="py-4 px-4 font-mono font-bold text-xs">{{ row.matric_number }}</td>
+                            <td class="py-4 px-4 text-center">
+                                {% if row.chm %}{{ row.chm.score }}/35 ({{ row.chm.grade_letter }}){% else %}-{% endif %}
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                {% if row.phy %}{{ row.phy.score }}/35 ({{ row.phy.grade_letter }}){% else %}-{% endif %}
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                {% if row.mth %}{{ row.mth.score }}/35 ({{ row.mth.grade_letter }}){% else %}-{% endif %}
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                {% if row.bio %}{{ row.bio.score }}/35 ({{ row.bio.grade_letter }}){% else %}-{% endif %}
+                            </td>
+                            <td class="py-4 px-4 text-center font-bold">{{ row.total_correct }} / {{ row.total_questions }}</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full font-extrabold text-xs {{ row.classification.bg_class }} {{ row.classification.text_class }}">
+                                    {{ row.gpa }}
+                                </span>
+                            </td>
+                            <td class="py-4 px-5 text-right">
+                                <a href="/result/{{ row.id }}" class="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-700 text-white text-xs font-bold transition">
+                                    View Result &amp; Corrections →
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+    </main>
+
+    <footer class="text-center py-5 text-xs text-slate-500 border-t border-stone-200">
+        Powered <strong class="text-amber-700">BY {{ powered_by_name }}</strong> • Built for {{ student_full_name }}
+    </footer>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: hillary-cbt-exam
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MAGIC_CODE
+        value: "1120"
+      - key: ALLOWED_MATRIC
+        value: "BU26MED1035"
+      - key: NTFY_TOPIC
+        value: "samuell-hilary-cbt-1120"
+      - key: STUDENT_FULL_NAME
+        value: "Olawuyi Eniola Hilary"
+      - key: STUDENT_FIRST_NAME
+        value: "Hilary"
+      - key: POWERED_BY_NAME
+        value: "SAMUELL"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false

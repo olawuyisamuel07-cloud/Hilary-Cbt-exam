@@ -1,0 +1,305 @@
+{% extends "base.html" %}
+{% block title %}Official Result — {{ student_full_name }} | BY {{ powered_by_name }}{% endblock %}
+
+{% block content %}
+<!-- FULL-BLEED DYNAMIC COLOR HERO SECTION (GREEN for First Class, YELLOW for 2:1, RED for 2:2 / Third Class / Fail) -->
+<section class="{{ classification.bg_class }} {{ classification.text_class }} transition-colors duration-500 shadow-xl">
+    <!-- Top Navigation Bar inside Result Hero -->
+    <div class="max-w-6xl mx-auto px-6 pt-6 pb-4 flex flex-wrap items-center justify-between gap-4 border-b border-black/10">
+        <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-[0.2em] {{ classification.badge_bg }}">
+                BY {{ powered_by_name }}
+            </span>
+            <span class="text-xs font-bold opacity-85">
+                Matric No: <span class="font-mono underline">{{ attempt.matric_number }}</span>
+            </span>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <a href="/history" class="px-4 py-2 rounded-xl bg-black/15 hover:bg-black/25 text-xs font-extrabold uppercase tracking-wider transition">
+                All Saved Attempts
+            </a>
+            <form action="/start-new-attempt" method="POST" class="inline">
+                <button type="submit" class="px-4 py-2 rounded-xl bg-white text-slate-900 hover:bg-stone-100 text-xs font-extrabold uppercase tracking-wider shadow transition">
+                    Retake New Exam
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Dynamic GPA Display -->
+    <div class="max-w-5xl mx-auto px-6 py-10 sm:py-14 text-center space-y-6">
+        <div class="space-y-2">
+            <p class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] opacity-90">
+                100 Level First Semester Preparatory Exam Result
+            </p>
+            <h1 class="font-display text-3xl sm:text-5xl font-bold leading-tight">
+                {{ student_full_name }}, this is your result
+            </h1>
+        </div>
+
+        <!-- Light Ticket Box Holding the Giant GPA Score -->
+        <div class="inline-block rounded-3xl border-4 px-10 sm:px-16 py-8 shadow-2xl {{ classification.ticket_bg }}">
+            <p class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] opacity-75 mb-1">
+                Cumulative Grade Point Average (5.00 Scale)
+            </p>
+            <div class="text-7xl sm:text-8xl md:text-9xl font-black tracking-tight leading-none my-2">
+                {{ gpa }}
+            </div>
+            <div class="mt-3 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 text-white text-xs sm:text-sm font-extrabold uppercase tracking-wider">
+                <span>{{ classification.class_name }}</span>
+                <span>•</span>
+                <span>{{ attempt.total_correct }} / {{ attempt.total_questions }} ({{ overall_pct }}%)</span>
+            </div>
+        </div>
+
+        <!-- Medium Caption / Feedback Message -->
+        <div class="max-w-2xl mx-auto space-y-2 pt-2">
+            <h2 class="text-2xl sm:text-3xl font-extrabold">
+                {{ classification.headline }}
+            </h2>
+            <p class="text-base sm:text-lg font-medium opacity-95 leading-relaxed">
+                {{ classification.caption }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Course Breakdown & Question Review Container -->
+<main class="max-w-6xl w-full mx-auto px-6 py-10 space-y-10">
+
+    <!-- 1. Course-by-Course Breakdown Table (Nigerian 5.0 Grading Scale) -->
+    <section class="bg-white rounded-3xl shadow-md border border-stone-200 overflow-hidden">
+        <div class="px-6 py-5 border-b border-stone-200 flex flex-wrap items-center justify-between gap-2 bg-stone-50">
+            <div>
+                <h2 class="text-lg font-extrabold text-slate-900">100 Level First Semester Course Breakdown (2 Units Each)</h2>
+            </div>
+            <span class="px-3.5 py-1.5 rounded-xl bg-slate-900 text-white text-xs font-bold">
+                Total Quality Points: {{ total_quality_points }} / {{ total_units * 5 }} ({{ total_units }} Units)
+            </span>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="border-b border-stone-200 text-[11px] font-extrabold uppercase tracking-wider text-slate-500 bg-stone-50/50">
+                        <th class="py-3.5 px-6">Course</th>
+                        <th class="py-3.5 px-4 text-center">Credit Units</th>
+                        <th class="py-3.5 px-4 text-center">Raw Score</th>
+                        <th class="py-3.5 px-4 text-center">Percentage</th>
+                        <th class="py-3.5 px-4 text-center">Grade</th>
+                        <th class="py-3.5 px-4 text-center">Grade Point</th>
+                        <th class="py-3.5 px-6 text-right">Remark</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-200 text-sm font-semibold text-slate-800">
+                    {% for sec in sections_data %}
+                    <tr class="hover:bg-stone-50/80 transition">
+                        <td class="py-4 px-6">
+                            <span class="font-extrabold text-slate-900">{{ sec.display_code }}</span>
+                            <span class="block text-xs text-slate-500">{{ sec.title }}</span>
+                        </td>
+                        <td class="py-4 px-4 text-center font-bold">{{ sec.credit_units }}</td>
+                        <td class="py-4 px-4 text-center font-bold">{{ sec.score }} / {{ sec.total_questions }}</td>
+                        <td class="py-4 px-4 text-center font-bold">{{ sec.percentage }}%</td>
+                        <td class="py-4 px-4 text-center">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg font-extrabold text-sm
+                                {% if sec.grade_letter == 'A' %}bg-emerald-100 text-emerald-800
+                                {% elif sec.grade_letter == 'B' %}bg-teal-100 text-teal-800
+                                {% elif sec.grade_letter == 'C' %}bg-amber-100 text-amber-800
+                                {% elif sec.grade_letter in ['D', 'E'] %}bg-orange-100 text-orange-800
+                                {% else %}bg-red-100 text-red-800{% endif %}">
+                                {{ sec.grade_letter }}
+                            </span>
+                        </td>
+                        <td class="py-4 px-4 text-center font-extrabold">{{ sec.grade_points }}.0</td>
+                        <td class="py-4 px-6 text-right font-bold">{{ sec.remark }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 2. Detailed Corrections & Explanations Section -->
+    <section class="bg-white rounded-3xl shadow-md border border-stone-200 p-6 sm:p-8 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-stone-200 pb-5">
+            <div>
+                <h2 class="text-xl font-extrabold text-slate-900">Detailed Question Review &amp; Explanations</h2>
+                <p class="text-xs sm:text-sm text-slate-500">
+                    See every question you missed, compare your option with the correct answer, and study the explanation behind it.
+                </p>
+            </div>
+
+            <!-- Filter: Wrong Only vs Flagged Only vs All Questions -->
+            <div class="inline-flex flex-wrap rounded-xl bg-stone-100 p-1 border border-stone-200 gap-1">
+                <button
+                    type="button"
+                    id="filter-wrong-btn"
+                    onclick="setReviewFilter('wrong')"
+                    class="px-4 py-2 rounded-lg text-xs font-extrabold bg-slate-900 text-white shadow-xs transition"
+                >
+                    Missed / Wrong Only
+                </button>
+                <button
+                    type="button"
+                    id="filter-flagged-btn"
+                    onclick="setReviewFilter('flagged')"
+                    class="px-4 py-2 rounded-lg text-xs font-extrabold text-amber-800 hover:bg-amber-100 transition"
+                >
+                    ⚑ Flagged Questions
+                </button>
+                <button
+                    type="button"
+                    id="filter-all-btn"
+                    onclick="setReviewFilter('all')"
+                    class="px-4 py-2 rounded-lg text-xs font-extrabold text-slate-700 hover:text-slate-900 transition"
+                >
+                    Show All 35 Questions
+                </button>
+            </div>
+        </div>
+
+        <!-- Course Tabs -->
+        <div class="flex flex-wrap gap-2">
+            {% for sec in sections_data %}
+            <button
+                type="button"
+                id="tab-btn-{{ sec.code }}"
+                onclick="switchCourseTab('{{ sec.code }}')"
+                class="px-4 py-2.5 rounded-xl font-extrabold text-xs sm:text-sm border transition flex items-center gap-2
+                    {% if loop.first %}bg-slate-900 text-white border-slate-900{% else %}bg-stone-50 text-slate-700 border-stone-200 hover:bg-stone-100{% endif %}"
+            >
+                <span>{{ sec.display_code }}</span>
+                <span class="px-2 py-0.5 rounded-full text-[11px] bg-red-100 text-red-800 font-bold">
+                    {{ sec.wrong_count }} Missed
+                </span>
+            </button>
+            {% endfor %}
+        </div>
+
+        <!-- Course Panels -->
+        {% for sec in sections_data %}
+        <div id="course-panel-{{ sec.code }}" class="space-y-4 {% if not loop.first %}hidden{% endif %}">
+            {% if sec.wrong_count == 0 %}
+            <div class="rounded-2xl bg-emerald-50 border border-emerald-200 p-6 text-center text-emerald-900 font-bold">
+                Perfect Score (35 / 35) in {{ sec.display_code }}! Switch to "Show All 35 Questions" if you want to review the explanations.
+            </div>
+            {% endif %}
+
+            {% for ans in sec.answers %}
+            <div
+                data-correct="{{ 'true' if ans.is_correct else 'false' }}"
+                data-flagged="{{ 'true' if ans.is_flagged else 'false' }}"
+                class="review-card rounded-2xl border-2 p-5 space-y-3 transition
+                    {% if ans.is_correct %}border-emerald-200 bg-emerald-50/30 correct-card hidden{% else %}border-red-200 bg-red-50/30 wrong-card{% endif %}"
+            >
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1 rounded-lg bg-slate-900 text-white font-extrabold text-xs">
+                            {{ sec.display_code }} • Question {{ ans.number }}
+                        </span>
+                        {% if ans.is_flagged %}
+                        <span class="px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 font-extrabold text-xs">
+                            ⚑ Flagged by {{ student_first_name }}
+                        </span>
+                        {% endif %}
+                    </div>
+                    {% if ans.is_correct %}
+                        <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-extrabold text-xs">
+                            ✓ Correct (Option {{ ans.correct_option }})
+                        </span>
+                    {% elif ans.selected_option %}
+                        <span class="px-3 py-1 rounded-full bg-red-100 text-red-800 font-extrabold text-xs">
+                            ✗ You chose {{ ans.selected_option }} • Correct is {{ ans.correct_option }}
+                        </span>
+                    {% else %}
+                        <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-900 font-extrabold text-xs">
+                            ⚠ Skipped (Not Answered) • Correct is {{ ans.correct_option }}
+                        </span>
+                    {% endif %}
+                </div>
+
+                <p class="text-base font-bold text-slate-900 leading-relaxed">
+                    {{ ans.question_text }}
+                </p>
+
+                <!-- Options Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm">
+                    {% for letter, opt_val in [('A', ans.option_a), ('B', ans.option_b), ('C', ans.option_c), ('D', ans.option_d)] %}
+                    <div class="p-3 rounded-xl border flex items-start gap-2.5
+                        {% if letter == ans.correct_option %}
+                            bg-emerald-100/90 border-emerald-500 text-emerald-950 font-bold
+                        {% elif letter == ans.selected_option and not ans.is_correct %}
+                            bg-red-100/90 border-red-400 text-red-950 font-bold line-through
+                        {% else %}
+                            bg-white border-stone-200 text-slate-700
+                        {% endif %}">
+                        <span class="font-extrabold">{{ letter }}.</span>
+                        <span>{{ opt_val }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Step-by-Step Explanation Box -->
+                <div class="rounded-xl bg-slate-900 text-slate-100 p-4 text-xs sm:text-sm leading-relaxed">
+                    <span class="font-extrabold text-amber-300 uppercase tracking-wider mr-1.5">Explanation:</span>
+                    {{ ans.explanation }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </section>
+
+</main>
+
+<footer class="max-w-6xl w-full mx-auto px-6 py-6 text-center text-xs text-slate-500 border-t border-stone-200">
+    Official Mock CBT Result for <strong class="text-slate-800">{{ student_full_name }}</strong> • Powered <strong class="text-amber-700">BY {{ powered_by_name }}</strong>
+</footer>
+
+<script>
+    let currentFilter = 'wrong';
+    const COURSE_CODES = ['CHM101', 'PHY101', 'MTH101', 'BIO101'];
+
+    function switchCourseTab(code) {
+        COURSE_CODES.forEach(c => {
+            const panel = document.getElementById('course-panel-' + c);
+            const btn = document.getElementById('tab-btn-' + c);
+            if (c === code) {
+                panel.classList.remove('hidden');
+                btn.className = "px-4 py-2.5 rounded-xl font-extrabold text-xs sm:text-sm border transition flex items-center gap-2 bg-slate-900 text-white border-slate-900";
+            } else {
+                panel.classList.add('hidden');
+                btn.className = "px-4 py-2.5 rounded-xl font-extrabold text-xs sm:text-sm border transition flex items-center gap-2 bg-stone-50 text-slate-700 border-stone-200 hover:bg-stone-100";
+            }
+        });
+    }
+
+    function setReviewFilter(mode) {
+        currentFilter = mode;
+        const wrongBtn = document.getElementById('filter-wrong-btn');
+        const flaggedBtn = document.getElementById('filter-flagged-btn');
+        const allBtn = document.getElementById('filter-all-btn');
+
+        const activeCls = "px-4 py-2 rounded-lg text-xs font-extrabold bg-slate-900 text-white shadow-xs transition";
+        const inactiveCls = "px-4 py-2 rounded-lg text-xs font-extrabold text-slate-700 hover:text-slate-900 transition";
+
+        wrongBtn.className = (mode === 'wrong') ? activeCls : inactiveCls;
+        flaggedBtn.className = (mode === 'flagged') ? activeCls : "px-4 py-2 rounded-lg text-xs font-extrabold text-amber-800 hover:bg-amber-100 transition";
+        allBtn.className = (mode === 'all') ? activeCls : inactiveCls;
+
+        document.querySelectorAll('.review-card').forEach(el => {
+            const isCorrect = el.getAttribute('data-correct') === 'true';
+            const isFlagged = el.getAttribute('data-flagged') === 'true';
+            if (mode === 'wrong') {
+                el.classList.toggle('hidden', isCorrect);
+            } else if (mode === 'flagged') {
+                el.classList.toggle('hidden', !isFlagged);
+            } else {
+                el.classList.remove('hidden');
+            }
+        });
+    }
+</script>
+{% endblock %}
