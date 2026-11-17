@@ -16,7 +16,7 @@ services:
       - key: STUDENT_FIRST_NAME
         value: "Hilary"
       - key: POWERED_BY_NAME
-        value: "SAMUELL"
+        value: "SAMUEL"
       - key: SECRET_KEY
         generateValue: true
       - key: DATABASE_URL

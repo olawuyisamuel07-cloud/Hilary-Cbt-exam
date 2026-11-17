@@ -10,7 +10,7 @@ NTFY_TOPIC = os.getenv("NTFY_TOPIC", "samuell-hilary-cbt-1120").strip()
 
 STUDENT_FULL_NAME = os.getenv("STUDENT_FULL_NAME", "Olawuyi Eniola Hilary").strip()
 STUDENT_FIRST_NAME = os.getenv("STUDENT_FIRST_NAME", "Hilary").strip()
-POWERED_BY_NAME = os.getenv("POWERED_BY_NAME", "SAMUELL").strip()
+POWERED_BY_NAME = os.getenv("POWERED_BY_NAME", "SAMUEL").strip()
 
 SECRET_KEY = os.getenv("SECRET_KEY", "hillary-cbt-secret-key-1120-samuell")
 
